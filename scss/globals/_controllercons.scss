@@ -1,0 +1,26 @@
+[class^="cc-"]:before,
+[class*=" cc-"]:before {
+	font-family: "controllercons";
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	text-align: center;
+	font-variant: normal;
+	text-transform: none;
+}
+ 
+.cc-megadrive:before { content: '\e800'; } /* '' */
+.cc-nes:before { content: '\e802'; } /* '' */
+.cc-snes:before { content: '\e803'; } /* '' */
+.cc-megadrive-o:before { content: '\e804'; } /* '' */
+.cc-gamecube-o:before { content: '\e805'; } /* '' */
+.cc-nes-o:before { content: '\e806'; } /* '' */
+.cc-n64:before { content: '\e807'; } /* '' */
+.cc-gamecube:before { content: '\e808'; } /* '' */
+.cc-ps1:before { content: '\e80a'; } /* '' */
+.cc-snes-o:before { content: '\e80b'; } /* '' */
+.cc-n64-o:before { content: '\e80c'; } /* '' */
+.cc-ps1-o:before { content: '\e80d'; } /* '' */

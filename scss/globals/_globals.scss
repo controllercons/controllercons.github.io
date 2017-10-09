@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "controllercons";
+  src: url('../font/controllercons.woff2?30719337') format('woff2'),
+       url('../font/controllercons.woff?30719337') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	color: #fff;
+	font: 400 16px/1.6 $main-stack;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	background: $dark;
+	//background: $main;
+	//background: linear-gradient($main, saturate($main, 20%));
+	margin: 0;
+}
+
+a {
+	background-color: transparent;
+	color: $accent;
+	text-decoration: none;
+	-webkit-text-decoration-skip: objects;
+	transition: all $duration $ease;
+	
+	&:focus,
+	&:hover {
+		color: $main;
+	}
+}
+
+.button {
+	background-color: $accent;
+	border-radius: 0.1em;
+	color: $dark;
+	font-weight: 600;
+	line-height: 1;
+	padding: 0.6em 1em;
+	text-transform: uppercase;
+	
+	&:focus,
+	&:hover {
+		background-color: $main;
+		color: $dark;
+	}
+	
+	&.ghost {
+		background-color: transparent;
+		border: 1px solid $accent;
+		color: $accent;
+		
+		&:focus,
+		&:hover {
+			background-color: $accent;
+			border-color: $main;
+			color: darken($main, 5%);
+		}
+	}
+}
