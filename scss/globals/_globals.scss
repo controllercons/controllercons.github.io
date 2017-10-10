@@ -20,8 +20,6 @@ html {
 
 body {
 	background: $dark;
-	//background: $main;
-	//background: linear-gradient($main, saturate($main, 20%));
 	margin: 0;
 }
 
@@ -35,6 +33,34 @@ a {
 	&:focus,
 	&:hover {
 		color: $main;
+	}
+}
+
+.burger {
+	background-color: $accent;
+	display: block;
+	height: 4px;
+	position: relative;
+	transition: all $duration $ease;
+	width: 2em;
+	
+	&:before,
+	&:after {
+		background-color: $accent;
+		content: '';
+		height: 4px;
+		left: 0;
+		position: absolute;
+		transition: all $duration $ease;
+		width: 2em;
+	}
+	
+	&:before {
+		top: -10px;
+	}
+	
+	&:after {
+		bottom: -10px;
 	}
 }
 

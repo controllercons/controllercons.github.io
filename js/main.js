@@ -3,7 +3,9 @@
 	$(function () {
 		
 		var duration = 250,
-			$cell = $( '#icons .cell' );
+			$cell = $( '#icons .cell' ),
+			$nav = $('#nav'),
+			$nav_toggle = $( '#nav-toggle' );
 		
 		$('a[href*="#"]:not([href="#"])').click(function () {
 			if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -13,12 +15,23 @@
 					$('html, body').animate({
 						scrollTop: target.offset().top - 150
 					}, 1000);
+					if ($nav.is(':visible')) {
+						$nav.stop().slideUp();
+					}
 					return false;
 				}
 			}
 		});
 		
-		$cell.on( 'click', function() {
+		$nav_toggle.on('click', function() {
+			if ( $nav.is(':visible') ) {
+				$nav.stop().slideUp();
+			} else {
+				$nav.stop().slideDown();
+			}
+		});
+		
+		$cell.on('click', function() {
 			var $original = $(this).find('[data-original]'),
 				$outlined = $(this).find('[data-outlined]');
 			

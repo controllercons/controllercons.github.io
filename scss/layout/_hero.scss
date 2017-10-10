@@ -1,18 +1,26 @@
 #hero {
-	background-color: $main;
+	background: $main;
 	background-image: url('img/hero-background.svg');
+	background-image: url('img/hero-background.svg'),
+		linear-gradient($main, saturate($main, 20%));
 	background-attachment: fixed;
 	background-size: cover;
 	display: flex;
 	height: 100vh;
 	font-size: 2em;
 	justify-content: center;
-	
+		
 	.caption {
 		align-self: flex-end;
 		flex: 1 100%;
+		font-size: 0.4em;
 		max-width: $max-document-width;
-		padding: 0 2rem 6rem;
+		padding: 0 2rem 3.5rem;
+		
+		@media only screen and (min-width: $breakpoint-small) {
+			font-size: 1em;
+			padding-bottom: 6rem;
+		}
 	}
 }
 

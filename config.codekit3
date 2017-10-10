@@ -9,92 +9,6 @@
 	],
 "creatorBuild": "25900",
 "files": {
-	"\/_template.ai": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/_template.ai",
-		"oF": 0
-		},
-	"\/cc-megadrive-o.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/cc-megadrive-o.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/cc-megadrive.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/cc-megadrive.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/cc-n64-o.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/cc-n64-o.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/cc-n64.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/cc-n64.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/cc-nes-o.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/cc-nes-o.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/cc-nes.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/cc-nes.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/cc-snes-o.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/cc-snes-o.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/cc-snes.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/cc-snes.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
 	"\/favicons\/120x120.png": {
 		"ft": 32768,
 		"iS": 7973,
@@ -249,18 +163,6 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
-		},
-	"\/logo.ai": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/logo.ai",
-		"oF": 0
-		},
-	"\/logo_alt.ai": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/logo_alt.ai",
-		"oF": 0
 		},
 	"\/main.css": {
 		"aP": 1,
@@ -453,162 +355,6 @@
 		"oF": 2,
 		"oS": 1,
 		"uL": 1
-		},
-	"\/src\/gamecube-01.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/src\/gamecube-01.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/src\/gamecube-02.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/src\/gamecube-02.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/src\/gamecube.ai": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/src\/gamecube.ai",
-		"oF": 0
-		},
-	"\/src\/n64-01.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/src\/n64-01.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/src\/n64-02.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/src\/n64-02.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/src\/n64.ai": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/src\/n64.ai",
-		"oF": 0
-		},
-	"\/src\/nes-01.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/src\/nes-01.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/src\/nes-02.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/src\/nes-02.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/src\/nes.ai": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/src\/nes.ai",
-		"oF": 0
-		},
-	"\/src\/ps1-01.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/src\/ps1-01.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/src\/ps1-02.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/src\/ps1-02.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/src\/ps1.ai": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/src\/ps1.ai",
-		"oF": 0
-		},
-	"\/src\/sega-01.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/src\/sega-01.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/src\/sega-02.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/src\/sega-02.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/src\/sega.ai": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/src\/sega.ai",
-		"oF": 0
-		},
-	"\/src\/snes-01.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/src\/snes-01.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/src\/snes-02.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/src\/snes-02.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/src\/snes.ai": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/src\/snes.ai",
-		"oF": 0
 		}
 	},
 "hooks": [
@@ -617,7 +363,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 507250436,
-	"displayValue": "controllercons",
+	"displayValue": "controllercons.github.io",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-drunkArcher"
 	},

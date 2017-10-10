@@ -22,6 +22,10 @@
 		width: 20%;
 	}
 	
+	@media only screen and (min-width: $breakpoint-mecha) {
+		width: 16.66%;	
+	}
+	
 	&:focus,
 	&:hover {
 		
@@ -31,7 +35,11 @@
 	}
 	
 	i {
-		font-size: 8em;
+		font-size: 5em;
+		
+		@media only screen and (min-width: $breakpoint-small) {
+			font-size: 8em;
+		}
 		
 		&[data-outlined] {
 			display: none;
@@ -51,4 +59,19 @@
 	position: absolute;
 	transform: translateX(-50%);
 	transition: opacity $duration $ease;
+}
+
+.column-container {
+	
+	@media only screen and (min-width: $breakpoint-small) {
+		align-items: center;
+		display: flex;
+	}
+}
+
+.column {
+	
+	@media only screen and (min-width: $breakpoint-small) {
+		flex: 1 0;
+	}
 }

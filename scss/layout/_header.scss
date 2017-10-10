@@ -2,16 +2,21 @@ header {
 	align-items: center;
 	background-color: darken($main, 5%);
 	display: flex;
-	padding: 1rem 3rem;
+	padding: 1rem;
 	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 1;
+	
+	@media only screen and (min-width: $breakpoint-small) {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
 }
 
 #home-link {
 	display: block;
-	flex: 2 0;
+	flex: 1 0;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -19,12 +24,57 @@ header {
 #logo {
 	height: auto;
 	display: block;
-	width: 5rem;
+	width: 3rem;
+	
+	@media only screen and (min-width: $breakpoint-small) {
+		width: 5rem;	
+	}
+}
+
+#nav-toggle {
+	border: 0;
+	padding: 0;
+	
+	@media only screen and (min-width: $breakpoint-small) {
+		display: none;
+	}
+	
+	&:focus,
+	&:hover {
+		outline: 0;
+		
+		.burger {
+			background-color: $dark;
+
+			&:before,
+			&:after {
+				background-color: $dark;
+			}		
+		}
+	}
 }
 
 nav {
-	flex: 2 0;
-	text-align: right;
+	background-color: darken($main, 10%);
+	display: none;
+	left: 0;
+	padding: 2rem 2rem 3rem;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	
+	@media only screen and (min-width: $breakpoint-small) {
+		display: block;
+		flex: 2 0;
+		padding: 0;
+		position: static;
+		text-align: right;
+		width: auto;
+		
+		&[style] {
+			display: block !important;
+		}
+	}
 	
 	ul {
 		list-style: none;
@@ -34,9 +84,22 @@ nav {
 	}
 	
 	li {
-		display: inline-block;
-		font-size: 1.1em;
+		display: block;
+		font-size: 1.2em;
 		font-weight: 600;
+				
+		@media only screen and (min-width: $breakpoint-small) {
+			display: inline-block;
+			font-size: 1.1em;
+		}
+		
+		&:last-child {
+			margin-top: 0.5em;
+			
+			@media only screen and (min-width: $breakpoint-small) {
+				margin-top: 0;	
+			}
+		}
 	}
 	
 	a {
