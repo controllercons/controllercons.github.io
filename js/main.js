@@ -15,7 +15,7 @@
 					$('html, body').animate({
 						scrollTop: target.offset().top - 150
 					}, 1000);
-					if ($nav.is(':visible')) {
+					if ( $nav.is(':visible') && $nav.css('position') === 'absolute' ) {
 						$nav.stop().slideUp();
 					}
 					return false;
