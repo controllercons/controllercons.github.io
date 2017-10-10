@@ -802,6 +802,7 @@ nav {
 
 @media only screen and (min-width: 32em) {
   nav {
+    background-color: transparent;
     display: block;
     -webkit-box-flex: 2;
         -ms-flex: 2 0;
@@ -859,8 +860,8 @@ nav a:focus:after, nav a:hover:after {
 #hero {
   background: #FF0E3B;
   background-image: url("img/hero-background.svg");
-  background-image: url("img/hero-background.svg"), -webkit-gradient(linear, left top, left bottom, from(#FF0E3B), to(#ff0e3b));
-  background-image: url("img/hero-background.svg"), linear-gradient(#FF0E3B, #ff0e3b);
+  background-image: url("img/hero-background.svg"), -webkit-gradient(linear, left top, left bottom, from(#FF0E3B), to(#c10024));
+  background-image: url("img/hero-background.svg"), linear-gradient(#FF0E3B, #c10024);
   background-attachment: fixed;
   background-size: cover;
   display: -webkit-box;
