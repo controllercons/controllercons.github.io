@@ -1,16 +1,21 @@
 header {
 	align-items: center;
-	background-color: darken($main, 5%);
+	background-color: transparent;
 	display: flex;
 	padding: 1rem;
 	position: fixed;
 	top: 0;
+	transition: all $duration $ease;
 	width: 100%;
 	z-index: 1;
 	
 	@media only screen and (min-width: $breakpoint-small) {
 		padding-left: 3rem;
 		padding-right: 3rem;
+	}
+	
+	&.filled {
+		background-color: $main;
 	}
 }
 
@@ -58,6 +63,7 @@ nav {
 	background-color: darken($main, 10%);
 	display: none;
 	left: 0;
+	max-height: 80vh;
 	padding: 2rem 2rem 3rem;
 	position: absolute;
 	top: 100%;
@@ -75,6 +81,10 @@ nav {
 		&[style] {
 			display: block !important;
 		}
+	}
+	
+	@media only screen and (max-device-width: 44.938em) and (orientation: landscape) {
+		overflow: scroll;
 	}
 	
 	ul {
@@ -110,6 +120,7 @@ nav {
 		
 		&:focus,
 		&:hover {
+			color: $dark;
 			
 			&:after {
 				height: 100%;

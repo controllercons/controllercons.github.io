@@ -4,8 +4,10 @@
 		
 		var duration = 250,
 			$cell = $( '#icons .cell' ),
+			$header = $('#header'),
+			$main_content = $('#main-content'),
 			$nav = $('#nav'),
-			$nav_toggle = $( '#nav-toggle' );
+			$nav_toggle = $('#nav-toggle');
 		
 		$('a[href*="#"]:not([href="#"])').click(function () {
 			if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -43,6 +45,14 @@
 				$outlined.fadeOut(duration, function() {
 					$original.fadeIn(duration);
 				});
+			}
+		});
+		
+		$(window).scroll(function () {
+			if ( $main_content.offset().top < ( $header.offset().top + $header.outerHeight() ) ) {
+				$header.addClass('filled');
+			} else {
+				$header.removeClass('filled');
 			}
 		});
 

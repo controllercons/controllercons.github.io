@@ -618,7 +618,7 @@ h3 {
   padding: 3.5rem 2rem;
 }
 
-@media only screen and (min-width: 32em) {
+@media only screen and (min-width: 45em) {
   .container {
     padding-bottom: 6rem;
     padding-top: 6rem;
@@ -677,7 +677,7 @@ h3 {
   font-size: 5em;
 }
 
-@media only screen and (min-width: 32em) {
+@media only screen and (min-width: 45em) {
   .cell i {
     font-size: 8em;
   }
@@ -705,7 +705,7 @@ h3 {
   transition: opacity 0.75s ease;
 }
 
-@media only screen and (min-width: 32em) {
+@media only screen and (min-width: 45em) {
   .column-container {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -716,7 +716,7 @@ h3 {
   }
 }
 
-@media only screen and (min-width: 32em) {
+@media only screen and (min-width: 45em) {
   .column {
     -webkit-box-flex: 1;
         -ms-flex: 1 0;
@@ -728,22 +728,28 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f4002d;
+  background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 1rem;
   position: fixed;
   top: 0;
+  -webkit-transition: all 0.75s ease;
+  transition: all 0.75s ease;
   width: 100%;
   z-index: 1;
 }
 
-@media only screen and (min-width: 32em) {
+@media only screen and (min-width: 45em) {
   header {
     padding-left: 3rem;
     padding-right: 3rem;
   }
+}
+
+header.filled {
+  background-color: #FF0E3B;
 }
 
 #home-link {
@@ -761,7 +767,7 @@ header {
   width: 3rem;
 }
 
-@media only screen and (min-width: 32em) {
+@media only screen and (min-width: 45em) {
   #logo {
     width: 5rem;
   }
@@ -772,7 +778,7 @@ header {
   padding: 0;
 }
 
-@media only screen and (min-width: 32em) {
+@media only screen and (min-width: 45em) {
   #nav-toggle {
     display: none;
   }
@@ -794,13 +800,14 @@ nav {
   background-color: #da0029;
   display: none;
   left: 0;
+  max-height: 80vh;
   padding: 2rem 2rem 3rem;
   position: absolute;
   top: 100%;
   width: 100%;
 }
 
-@media only screen and (min-width: 32em) {
+@media only screen and (min-width: 45em) {
   nav {
     background-color: transparent;
     display: block;
@@ -817,6 +824,12 @@ nav {
   }
 }
 
+@media only screen and (max-device-width: 44.938em) and (orientation: landscape) {
+  nav {
+    overflow: scroll;
+  }
+}
+
 nav ul {
   list-style: none;
   margin-bottom: 0;
@@ -830,7 +843,7 @@ nav li {
   font-weight: 600;
 }
 
-@media only screen and (min-width: 32em) {
+@media only screen and (min-width: 45em) {
   nav li {
     display: inline-block;
     font-size: 1.1em;
@@ -841,7 +854,7 @@ nav li:last-child {
   margin-top: 0.5em;
 }
 
-@media only screen and (min-width: 32em) {
+@media only screen and (min-width: 45em) {
   nav li:last-child {
     margin-top: 0;
   }
@@ -851,6 +864,10 @@ nav a {
   color: #fff;
   display: block;
   padding: 0.5em 0.75em;
+}
+
+nav a:focus, nav a:hover {
+  color: #282827;
 }
 
 nav a:focus:after, nav a:hover:after {
@@ -885,10 +902,16 @@ nav a:focus:after, nav a:hover:after {
   padding: 0 2rem 3.5rem;
 }
 
-@media only screen and (min-width: 32em) {
+@media only screen and (min-width: 45em) {
   #hero .caption {
     font-size: 1em;
     padding-bottom: 6rem;
+  }
+}
+
+@media only screen and (max-device-width: 44.938em) and (orientation: landscape) {
+  #hero .caption {
+    font-size: 0.4em;
   }
 }
 

@@ -20,6 +20,10 @@
 			font-size: 1em;
 			padding-bottom: 6rem;
 		}
+		
+		@media only screen and (max-device-width: 44.938em) and (orientation: landscape) {
+			font-size: 0.4em;
+		}
 	}
 }
 
