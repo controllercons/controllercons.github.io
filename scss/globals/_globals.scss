@@ -16,6 +16,10 @@ html {
 	font: 400 16px/1.6 $main-stack;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+	
+	@media only screen and (min-width: $breakpoint-mecha) {
+		font-size: 18px;	
+	}
 }
 
 body {

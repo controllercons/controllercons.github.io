@@ -1,7 +1,6 @@
 #hero {
-	background: $main;
-	background-image: url('img/hero-background.svg');
-	background-image: url('img/hero-background.svg'), linear-gradient($main, darken($main, 15%));
+	background: $main url('img/hero-background.svg');;
+	background: url('img/hero-background.svg'), linear-gradient($main, darken($main, 15%));
 	background-attachment: fixed;
 	background-size: cover;
 	display: flex;

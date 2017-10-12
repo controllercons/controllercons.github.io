@@ -444,6 +444,12 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+@media only screen and (min-width: 120em) {
+  html {
+    font-size: 18px;
+  }
+}
+
 body {
   background: #282827;
   margin: 0;
@@ -875,10 +881,9 @@ nav a:focus:after, nav a:hover:after {
 }
 
 #hero {
-  background: #FF0E3B;
-  background-image: url("img/hero-background.svg");
-  background-image: url("img/hero-background.svg"), -webkit-gradient(linear, left top, left bottom, from(#FF0E3B), to(#c10024));
-  background-image: url("img/hero-background.svg"), linear-gradient(#FF0E3B, #c10024);
+  background: #FF0E3B url("img/hero-background.svg");
+  background: url("img/hero-background.svg"), -webkit-gradient(linear, left top, left bottom, from(#FF0E3B), to(#c10024));
+  background: url("img/hero-background.svg"), linear-gradient(#FF0E3B, #c10024);
   background-attachment: fixed;
   background-size: cover;
   display: -webkit-box;
