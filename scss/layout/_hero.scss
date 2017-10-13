@@ -13,11 +13,10 @@
 		flex: 1 100%;
 		font-size: 0.4em;
 		max-width: $max-document-width;
-		padding: 0 2rem 3.5rem;
+		padding: 0 2rem 6rem;
 		
 		@media only screen and (min-width: $breakpoint-small) {
 			font-size: 1em;
-			padding-bottom: 6rem;
 		}
 		
 		@media only screen and (max-device-width: 44.938em) and (orientation: landscape) {
