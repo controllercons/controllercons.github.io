@@ -559,71 +559,133 @@ h3 {
   text-transform: none;
 }
 
-.cc-megadrive:before {
+.cc-gamecube:before {
   content: '\e800';
 }
 
 /* '' */
-.cc-nes:before {
+.cc-gamecube-o:before {
+  content: '\e801';
+}
+
+/* '' */
+.cc-n64:before {
   content: '\e802';
 }
 
 /* '' */
-.cc-snes:before {
+.cc-n64-o:before {
   content: '\e803';
 }
 
 /* '' */
-.cc-megadrive-o:before {
+.cc-nes:before {
   content: '\e804';
 }
 
 /* '' */
-.cc-gamecube-o:before {
+.cc-nes-o:before {
   content: '\e805';
 }
 
 /* '' */
-.cc-nes-o:before {
+.cc-ps1:before {
   content: '\e806';
 }
 
 /* '' */
-.cc-n64:before {
+.cc-ps1-o:before {
   content: '\e807';
 }
 
 /* '' */
-.cc-gamecube:before {
+.cc-ps2:before {
   content: '\e808';
 }
 
 /* '' */
-.cc-ps1:before {
+.cc-ps2-o:before {
+  content: '\e809';
+}
+
+/* '' */
+.cc-ps3:before {
   content: '\e80a';
 }
 
 /* '' */
-.cc-snes-o:before {
+.cc-ps3-o:before {
   content: '\e80b';
 }
 
 /* '' */
-.cc-n64-o:before {
+.cc-megadrive:before {
   content: '\e80c';
 }
 
 /* '' */
-.cc-ps1-o:before {
+.cc-megadrive-o:before {
   content: '\e80d';
 }
 
 /* '' */
+.cc-snes:before {
+  content: '\e80e';
+}
+
+/* '' */
+.cc-snes-o:before {
+  content: '\e80f';
+}
+
+/* '' */
+.cc-xbox:before {
+  content: '\e810';
+}
+
+/* '' */
+.cc-xbox-o:before {
+  content: '\e811';
+}
+
+/* '' */
+.cc-xbox360:before {
+  content: '\e812';
+}
+
+/* '' */
+.cc-xbox360-o:before {
+  content: '\e813';
+}
+
+/* '' */
 .container {
   margin-left: auto;
   margin-right: auto;
   max-width: 81.25rem;
-  padding: 6rem 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.section {
+  padding-bottom: 3.5rem;
+  padding-top: 3.5rem;
+}
+
+@media only screen and (min-width: 45em) {
+  .section {
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+  }
+}
+
+.section:nth-of-type(odd) {
+  background-color: #f2f2f2;
+  color: #282827;
+}
+
+.section-title {
+  font-size: 2em;
 }
 
 .grid {
@@ -640,7 +702,6 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #282827;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1035,4 +1096,20 @@ nav a:focus:after, nav a:hover:after {
 
 .gamecube {
   color: #585fc8;
+}
+
+.ps2 {
+  color: #000000;
+}
+
+.xbox {
+  color: #000000;
+}
+
+.ps3 {
+  color: #000000;
+}
+
+.xbox-360 {
+  color: #f7f7ed;
 }
