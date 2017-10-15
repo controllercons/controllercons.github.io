@@ -12,23 +12,15 @@
 	text-transform: none;
 }
  
-.cc-gamecube:before { content: '\e800'; } /* '' */
-.cc-gamecube-o:before { content: '\e801'; } /* '' */
-.cc-n64:before { content: '\e802'; } /* '' */
-.cc-n64-o:before { content: '\e803'; } /* '' */
-.cc-nes:before { content: '\e804'; } /* '' */
-.cc-nes-o:before { content: '\e805'; } /* '' */
-.cc-ps1:before { content: '\e806'; } /* '' */
-.cc-ps1-o:before { content: '\e807'; } /* '' */
-.cc-ps2:before { content: '\e808'; } /* '' */
-.cc-ps2-o:before { content: '\e809'; } /* '' */
-.cc-ps3:before { content: '\e80a'; } /* '' */
-.cc-ps3-o:before { content: '\e80b'; } /* '' */
-.cc-megadrive:before { content: '\e80c'; } /* '' */
-.cc-megadrive-o:before { content: '\e80d'; } /* '' */
-.cc-snes:before { content: '\e80e'; } /* '' */
-.cc-snes-o:before { content: '\e80f'; } /* '' */
-.cc-xbox:before { content: '\e810'; } /* '' */
-.cc-xbox-o:before { content: '\e811'; } /* '' */
-.cc-xbox360:before { content: '\e812'; } /* '' */
-.cc-xbox360-o:before { content: '\e813'; } /* '' */
+.cc-megadrive:before { content: '\e800'; } /* '' */
+.cc-nes:before { content: '\e802'; } /* '' */
+.cc-snes:before { content: '\e803'; } /* '' */
+.cc-megadrive-o:before { content: '\e804'; } /* '' */
+.cc-gamecube-o:before { content: '\e805'; } /* '' */
+.cc-nes-o:before { content: '\e806'; } /* '' */
+.cc-n64:before { content: '\e807'; } /* '' */
+.cc-gamecube:before { content: '\e808'; } /* '' */
+.cc-ps1:before { content: '\e80a'; } /* '' */
+.cc-snes-o:before { content: '\e80b'; } /* '' */
+.cc-n64-o:before { content: '\e80c'; } /* '' */
+.cc-ps1-o:before { content: '\e80d'; } /* '' */
