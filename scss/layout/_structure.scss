@@ -6,6 +6,25 @@
 	padding-right: 2rem;
 }
 
+.column-container {
+	
+	@media only screen and (min-width: $breakpoint-small) {
+		align-items: center;
+		display: flex;
+	}
+}
+
+.column {
+	
+	@media only screen and (min-width: $breakpoint-small) {
+		flex: 1 0;
+	}
+	
+	.section-title {
+		text-align: left;
+	}
+}
+
 .section {
 	padding-bottom: 3.5rem;
 	padding-top: 3.5rem;
@@ -15,7 +34,7 @@
 		padding-top: 6rem;
 	}
 	
-	&:nth-of-type(odd) {
+	&:nth-of-type(even) {
 		background-color: $light;
 		color: $dark;
 	}

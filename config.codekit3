@@ -9,6 +9,16 @@
 	],
 "creatorBuild": "25900",
 "files": {
+	"\/css\/main.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/main-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/favicons\/120x120.png": {
 		"ft": 32768,
 		"iS": 7973,
@@ -163,16 +173,6 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
-		},
-	"\/main.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/main-min.css",
-		"oF": 0,
-		"oS": 0
 		},
 	"\/scss\/components\/_controllers.scss": {
 		"aP": 0,
@@ -344,16 +344,16 @@
 		"uL": 1
 		},
 	"\/scss\/main.scss": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/main.css",
+		"oAP": "\/css\/main.css",
 		"oF": 2,
-		"oS": 1,
+		"oS": 0,
 		"uL": 1
 		}
 	},
