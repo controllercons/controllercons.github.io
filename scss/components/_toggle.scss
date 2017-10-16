@@ -4,7 +4,7 @@
 	opacity: 0;
 	position: absolute;
 	text-align: right;
-	transition: opacity $duration $ease;
+	transition: opacity $duration $timing;
 	
 	&.visible {
 		opacity: 1;
@@ -16,7 +16,7 @@
 		cursor: pointer;
 		height: 1.2em;
 		display: block;
-		transition: all $duration $ease;
+		transition: all $duration $timing;
 		width: 1.2em;
 		
 		&.outline {

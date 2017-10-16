@@ -1,37 +1,40 @@
-
 .nes {
-	//background-color: #f22a2a;
-	color: $nes-hex;
+	background-color: $nes-hex;
 }
 .snes {
-	//background-color: #d28dff;
-	color: $snes-hex;
+	background-color: $snes-hex;
 }
 .megadrive {
-	//background-color: #ef0a0a;
-	color: $megadrive-hex;
+	background-color: $megadrive-hex;
+	color: $light;
 }
 .n64 {
-	//background-color: #ffdb2c;
-	color: $n64-hex;
+	background-color: $n64-hex;
 }
 .psx {
-	//background-color: #6effd2;
-	color: $psx-hex;
+	background-color: $psx-hex;
 }
 .gamecube {
-	//background-color: #d2d2d2;
-	color: $gamecube-hex;
+	background-color: $gamecube-hex;
 }
 .ps2 {
-	color: $ps2-hex;
+	background-color: $ps2-hex;
+	color: $light;
 }
 .xbox {
-	color: $xbox-hex;
+	background-color: $xbox-hex;
+	color: $light;
 }
 .ps3 {
-	color: $ps3-hex;
+	background-color: $ps3-hex;
+	color: $light;
 }
 .xbox-360 {
-	color: $xbox-360-hex;
+	background-color: $xbox-360-hex;
+}
+.wii-remote {
+	background-color: $wii-remote-hex;
+}
+.wii-u {
+	background-color: $wii-u-hex;
 }

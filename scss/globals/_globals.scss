@@ -34,7 +34,7 @@ a {
 	color: $accent;
 	text-decoration: none;
 	-webkit-text-decoration-skip: objects;
-	transition: all $duration $ease;
+	transition: all $duration $timing;
 	
 	&:focus,
 	&:hover {
@@ -47,7 +47,7 @@ a {
 	display: block;
 	height: 4px;
 	position: relative;
-	transition: all $duration $ease;
+	transition: all $duration $timing;
 	width: 2em;
 	
 	&:before,
@@ -57,7 +57,7 @@ a {
 		height: 4px;
 		left: 0;
 		position: absolute;
-		transition: all $duration $ease;
+		transition: all $duration $timing;
 		width: 2em;
 	}
 	
