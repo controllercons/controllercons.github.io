@@ -126,5 +126,14 @@ nav {
 				height: 100%;
 			}
 		}
+		
+		&.active {
+			color: $accent;
+			
+			&:focus,
+			&:hover {
+				color: $dark;
+			}
+		}
 	}
 }

@@ -3,23 +3,28 @@
 	$(function () {
 		
 		var duration = 250,
-			$cell = $( '#icons .cell' ),
-			$header = $('#header'),
-			$main_content = $('#main-content'),
+			$cell = $( '#icons .cell' ),			
 			$nav = $('#nav'),
 			$nav_toggle = $('#nav-toggle');
 		
 		$('a[href*="#"]:not([href="#"])').click(function () {
+			
+			//$nav.find('a').each().removeClass('active');
+			//$(this).addClass('active');
+			
 			if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 				var target = $(this.hash);
 				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 				if (target.length) {
 					$('html, body').animate({
 						scrollTop: target.offset().top - 150
-					}, 1000);
-					if ( $nav.is(':visible') && $nav.css('position') === 'absolute' ) {
-						$nav.stop().slideUp();
-					}
+					}, 1000, function() {
+						if ( $nav.is(':visible') && $nav.css('position') === 'absolute' ) {
+							$nav.stop().slideUp();
+						}
+						//$(document).on("scroll", onScroll);
+					});
+
 					return false;
 				}
 			}
@@ -48,14 +53,32 @@
 			}
 		});
 		
-		$(window).scroll(function () {
-			if ( $main_content.offset().top < ( $header.offset().top + $header.outerHeight() ) ) {
-				$header.addClass('filled');
-			} else {
-				$header.removeClass('filled');
+		$(document).on('scroll', onScroll);
+		
+	});
+	
+	function onScroll(event){
+		var scrollPos = $(document).scrollTop(),
+			$header = $('#header'),
+			$main_content = $('#main-content');
+		
+		if ( $main_content.offset().top < ( $header.offset().top + $header.outerHeight() ) ) {
+			$header.addClass('filled');
+		} else {
+			$header.removeClass('filled');
+		}
+		
+		$('#nav a').each(function () {
+			var currLink = $(this);
+			var refElement = $(currLink.attr("href"));
+			if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+				$('#nav a').removeClass("active");
+				currLink.addClass("active");
+			}
+			else{
+				currLink.removeClass("active");
 			}
 		});
-
-	});
+	}
 	
 }(window.jQuery, window, document));
