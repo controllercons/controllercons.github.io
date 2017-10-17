@@ -788,12 +788,13 @@ nav {
   background: url("../img/hero-background.svg"), linear-gradient(#082e41, #062331);
   background-size: cover;
   display: flex;
-  height: 100vh;
+  height: 100%;
   font-size: 2em;
   justify-content: center; }
   @media only screen and (min-width: 52.5em) {
     #hero {
-      background-attachment: fixed; } }
+      background-attachment: fixed;
+      height: 100vh; } }
   #hero .caption {
     align-self: flex-end;
     flex: 1 100%;
