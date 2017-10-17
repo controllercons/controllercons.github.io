@@ -1,13 +1,16 @@
 #hero {
-	background: $main url('../img/hero-background.svg');
-	background: url('../img/hero-background.svg'), linear-gradient($main, darken($main, 15%));
-	background-attachment: fixed;
+	background: $dark url('../img/hero-background.svg');
+	background: url('../img/hero-background.svg'), linear-gradient($dark, darken($dark, 3.5%));
 	background-size: cover;
 	display: flex;
 	height: 100vh;
 	font-size: 2em;
 	justify-content: center;
-		
+	
+	@media only screen and (min-width: $breakpoint-medium) {
+		background-attachment: fixed;
+	}
+	
 	.caption {
 		align-self: flex-end;
 		flex: 1 100%;
@@ -16,7 +19,7 @@
 		padding: 0 2rem 6rem;
 		
 		@media only screen and (min-width: $breakpoint-small) {
-			font-size: 1em;
+			font-size: 0.8em;
 		}
 		
 		@media only screen and (max-device-width: 44.938em) and (orientation: landscape) {
@@ -30,4 +33,5 @@
 	color: #fff;
 	line-height: 1;
 	margin: 0;
+	text-transform: uppercase;
 }

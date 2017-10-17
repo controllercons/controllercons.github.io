@@ -38,3 +38,23 @@
 .wii-u {
 	background-color: $wii-u-hex;
 }
+.ps4 {
+	background-color: $ps4-hex;
+	color: $light;
+}
+.xbox-one {
+	background-color: $xbox-one-hex;
+	color: $light;
+}
+/*
+.switch {
+	background-color: $switch-hex;
+	color: $light;
+}
+*/
+.switch-joycon-l {
+	background-color: $switch-l-hex;
+}
+.switch-joycon-r {
+	background-color: $switch-r-hex;
+}

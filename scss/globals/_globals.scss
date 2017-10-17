@@ -87,14 +87,14 @@ a {
 	
 	&.ghost {
 		background-color: transparent;
-		border: 1px solid $accent;
-		color: $accent;
+		border: 1px solid $light;
+		color: $light;
 		
 		&:focus,
 		&:hover {
 			background-color: $accent;
-			border-color: $main;
-			color: darken($main, 5%);
+			border-color: $accent;
+			color: $light;
 		}
 	}
 }

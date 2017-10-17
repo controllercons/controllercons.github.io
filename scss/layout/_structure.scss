@@ -19,10 +19,6 @@
 	@media only screen and (min-width: $breakpoint-small) {
 		flex: 1 0;
 	}
-	
-	.section-title {
-		text-align: left;
-	}
 }
 
 .section {
@@ -41,14 +37,9 @@
 			padding-top: 6rem;
 		}
 		
-		.container {
+		main {
 			padding-left: 10rem;
 			padding-right: 10rem;
 		}
 	}
-}
-
-.section-title {
-	font-size: 2em;
-	margin-top: 0;
 }
