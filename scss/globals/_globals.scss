@@ -98,3 +98,14 @@ a {
 		}
 	}
 }
+
+.button-container {
+	
+	.button {
+		margin-right: 0.5em;
+		
+		&:last-child {
+			margin-right: auto;
+		}
+	}
+}

@@ -453,6 +453,11 @@ a {
       border-color: #E0DB3C;
       color: #eaeae4; }
 
+.button-container .button {
+  margin-right: 0.5em; }
+  .button-container .button:last-child {
+    margin-right: auto; }
+
 h1 {
   font-size: 2.5em;
   font-weight: 900; }
@@ -634,6 +639,9 @@ h3 {
   .column {
     flex: 1 0; } }
 
+#download {
+  text-align: center; }
+
 .section:nth-of-type(even) {
   background-color: #eaeae4;
   color: #082e41; }
@@ -645,9 +653,23 @@ h3 {
     .section.text-section {
       padding-bottom: 6rem;
       padding-top: 6rem; } }
-  .section.text-section main {
+
+@media only screen and (min-width: 45em) {
+  .text-area {
+    padding-left: 5rem;
+    padding-right: 5rem; } }
+
+@media only screen and (min-width: 52.5em) {
+  .text-area {
     padding-left: 10rem;
-    padding-right: 10rem; }
+    padding-right: 10rem; } }
+
+.text-area .inline-link {
+  background-color: #E0DB3C;
+  color: #082e41;
+  text-decoration: underline; }
+  .text-area .inline-link:focus, .text-area .inline-link:hover {
+    color: #da2536; }
 
 .grid {
   display: flex;
