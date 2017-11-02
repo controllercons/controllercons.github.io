@@ -1,15 +1,17 @@
-[class^="cc-"]:before,
-[class*=" cc-"]:before {
-	font-family: "controllercons";
-	font-style: normal;
-	font-weight: normal;
-	speak: none;
-	display: inline-block;
-	text-decoration: inherit;
-	width: 1em;
-	text-align: center;
-	font-variant: normal;
-	text-transform: none;
+.cc {
+	
+	&:before {
+		display: inline-block;
+		font-family: "controllercons";
+		font-style: normal;
+		text-transform: none;
+		font-variant: normal;
+		font-weight: normal;
+		speak: none;
+		text-align: center;
+		text-decoration: inherit;
+		width: 1em;
+	}
 }
  
 .cc-gamecube:before { content: '\e800'; } /* '' */

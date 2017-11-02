@@ -474,18 +474,17 @@ h3 {
 .section-title {
   margin-top: 0; }
 
-[class^="cc-"]:before,
-[class*=" cc-"]:before {
+.cc:before {
+  display: inline-block;
   font-family: "controllercons";
   font-style: normal;
+  text-transform: none;
+  font-variant: normal;
   font-weight: normal;
   speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
   text-align: center;
-  font-variant: normal;
-  text-transform: none; }
+  text-decoration: inherit;
+  width: 1em; }
 
 .cc-gamecube:before {
   content: '\e800'; }
@@ -974,3 +973,11 @@ nav {
       border: 0;
       margin-bottom: 0;
       padding-bottom: 0; }
+
+.examples {
+  justify-content: space-around; }
+
+.example {
+  flex: 0 0 20%;
+  max-width: 20%;
+  text-align: center; }
