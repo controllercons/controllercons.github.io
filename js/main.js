@@ -58,6 +58,10 @@
 		});
 		*/
 		
+		$cell.on('click', function() {
+			void(0);
+		});
+		
 		$(document).on('scroll', onScroll);
 		
 		onScroll();
