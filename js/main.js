@@ -3,9 +3,12 @@
 	$(function () {
 		
 		var duration = 250,
-			$cell = $( '#icons .cell' ),			
+			$cell = $('#icons .cell'),
+			$date = $('#date'),
 			$nav = $('#nav'),
 			$nav_toggle = $('#nav-toggle');
+		
+		$date.html((new Date()).getFullYear());
 		
 		$('a[href*="#"]:not([href="#"])').click(function () {
 			
@@ -38,6 +41,7 @@
 			}
 		});
 		
+		/*
 		$cell.on('click', function() {
 			var $original = $(this).find('[data-original]'),
 				$outlined = $(this).find('[data-outlined]');
@@ -52,12 +56,15 @@
 				});
 			}
 		});
+		*/
 		
 		$(document).on('scroll', onScroll);
 		
+		onScroll();
 	});
 	
-	function onScroll(event){
+	function onScroll(event) {
+
 		var scrollPos = $(document).scrollTop(),
 			$header = $('#header'),
 			$main_content = $('#main-content');

@@ -10,9 +10,9 @@
 	display: flex;
 	height: 20rem;
 	height: 25vh;
+	overflow: hidden;
 	position: relative;
 	text-align: center;
-	transition: opacity $duration $timing;
 	width: 50%;
 	
 	@media only screen and (min-width: $breakpoint-medium) {
@@ -29,18 +29,39 @@
 	
 	&:focus,
 	&:hover {
-		opacity: 0.8;
+		
+		i {
+			&[data-original] {
+				opacity: 0;
+				transform: translateX(-150%);
+			}
+			
+			&[data-outlined] {
+				opacity: 1;
+				transform: translateX(-50%);
+			}
+		}
+		
 	}
 	
 	i {
+		display: inline-block;
 		font-size: 5em;
+		left: 50%;
+		opacity: 1;
+		position: absolute;
+		top: 0;
+		transition: $duration $timing;
+		transform: translateX(-50%);
 		
 		@media only screen and (min-width: $breakpoint-small) {
 			font-size: 8em;
 		}
 		
 		&[data-outlined] {
-			display: none;
+			//display: none;
+			opacity: 0;
+			transform: translateX(-150%);
 		}
 	}
 	
