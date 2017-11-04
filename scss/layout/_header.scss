@@ -128,11 +128,11 @@ nav {
 		}
 		
 		&.active {
-			color: $accent;
+			color: $accent !important;
 			
 			&:focus,
 			&:hover {
-				color: $dark;
+				color: $dark !important;
 			}
 		}
 	}

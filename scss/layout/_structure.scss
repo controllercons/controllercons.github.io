@@ -9,7 +9,7 @@
 .column-container {
 	
 	@media only screen and (min-width: $breakpoint-small) {
-		align-items: center;
+		align-items: flex-start;
 		display: flex;
 	}
 }
@@ -27,7 +27,7 @@
 
 .section {
 
-	&:nth-of-type(even) {
+	&:nth-child(even) {
 		background-color: $light;
 		color: $dark;
 	}
