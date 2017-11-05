@@ -381,7 +381,7 @@ template {
 
 @font-face {
   font-family: "controllercons";
-  src: url("../font/controllercons.woff2?30719337") format("woff2"), url("../font/controllercons.woff?30719337") format("woff");
+  src: url("../font/controllercons.woff2?123") format("woff2"), url("../font/controllercons.woff?123") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -412,6 +412,18 @@ a {
   transition: all 0.75s ease; }
   a:focus, a:hover {
     color: #da2536; }
+  a.twitter-trigger {
+    background-color: #da2536;
+    border-radius: 50%;
+    color: #f2f6f9;
+    display: inline-block;
+    font-size: 0.8em;
+    height: 1.25em;
+    line-height: 1.3;
+    text-align: center;
+    width: 1.25em; }
+    a.twitter-trigger:focus, a.twitter-trigger:hover {
+      background-color: #082e41; }
 
 .burger {
   background-color: #e0db3c;
@@ -453,10 +465,12 @@ a {
       border-color: #e0db3c;
       color: #f2f6f9; }
 
-.button-container .button {
-  margin-right: 0.5em; }
-  .button-container .button:last-child {
-    margin-right: auto; }
+.button-container {
+  padding-bottom: 3.5rem; }
+  .button-container .button {
+    margin-right: 0.5em; }
+    .button-container .button:last-child {
+      margin-right: auto; }
 
 h1 {
   font-size: 2.5em;
@@ -471,6 +485,7 @@ h3 {
   font-size: 1.5em;
   font-weight: 600; }
 
+.section-subtitle,
 .section-title {
   margin-top: 0; }
 
@@ -622,6 +637,12 @@ h3 {
   content: '\e821'; }
 
 /* '' */
+#ad-wrapper {
+  padding-top: 1.5em; }
+  #ad-wrapper > * {
+    margin-left: auto;
+    margin-right: auto; }
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -641,6 +662,9 @@ h3 {
 #download {
   text-align: center; }
 
+#info .section-title {
+  text-align: center; }
+
 .section:nth-child(even) {
   background-color: #f2f6f9;
   color: #082e41; }
@@ -652,6 +676,16 @@ h3 {
     .section.text-section {
       padding-bottom: 6rem;
       padding-top: 6rem; } }
+
+#social-buttons {
+  padding-top: 3.5rem;
+  text-align: center; }
+  #social-buttons > *:not(h2) {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 1em; }
+    #social-buttons > *:not(h2):last-child {
+      margin-right: auto; }
 
 @media only screen and (min-width: 45em) {
   .text-area {
@@ -696,25 +730,25 @@ h3 {
       width: 16.66%; } }
   .cell:focus i[data-original], .cell:hover i[data-original] {
     opacity: 0;
-    transform: translateX(-150%); }
+    transform: translate(-150%, -50%); }
   .cell:focus i[data-outlined], .cell:hover i[data-outlined] {
     opacity: 1;
-    transform: translateX(-50%); }
+    transform: translate(-50%, -50%); }
   .cell i {
     display: inline-block;
     font-size: 5em;
     left: 50%;
     opacity: 1;
     position: absolute;
-    top: 0;
+    top: 50%;
     transition: 0.75s ease;
-    transform: translateX(-50%); }
+    transform: translate(-50%, -50%); }
     @media only screen and (min-width: 45em) {
       .cell i {
         font-size: 8em; } }
     .cell i[data-outlined] {
       opacity: 0;
-      transform: translateX(-150%); }
+      transform: translate(-150%, -50%); }
   .cell .inner {
     flex: 1; }
 
@@ -997,6 +1031,8 @@ nav {
     margin-bottom: -0.5em;
     margin-top: 0.5em;
     padding: 0.75em; }
+    .list ul .twitter-trigger {
+      color: #e0db3c; }
   .list strong {
     font-size: 1.2em; }
 

@@ -6,14 +6,12 @@
 			$cell = $('#icons .cell'),
 			$date = $('#date'),
 			$nav = $('#nav'),
-			$nav_toggle = $('#nav-toggle');
+			$nav_toggle = $('#nav-toggle'),
+			$twitter_trigger = $('.twitter-trigger');
 		
 		$date.html((new Date()).getFullYear());
 		
 		$('a[href*="#"]:not([href="#"])').click(function () {
-			
-			//$nav.find('a').each().removeClass('active');
-			//$(this).addClass('active');
 			
 			if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 				var target = $(this.hash);
@@ -25,7 +23,6 @@
 						if ( $nav.is(':visible') && $nav.css('position') === 'absolute' ) {
 							$nav.stop().slideUp();
 						}
-						//$(document).on("scroll", onScroll);
 					});
 
 					return false;
@@ -41,25 +38,12 @@
 			}
 		});
 		
-		/*
-		$cell.on('click', function() {
-			var $original = $(this).find('[data-original]'),
-				$outlined = $(this).find('[data-outlined]');
-			
-			if ( $original.is(':visible') ) {
-				$original.fadeOut(duration, function() {
-					$outlined.fadeIn(duration);
-				});
-			} else {
-				$outlined.fadeOut(duration, function() {
-					$original.fadeIn(duration);
-				});
-			}
-		});
-		*/
-		
 		$cell.on('click', function() {
 			void(0);
+		});
+		
+		$twitter_trigger.on('click', function() {
+			
 		});
 		
 		$(document).on('scroll', onScroll);

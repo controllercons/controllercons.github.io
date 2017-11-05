@@ -2,11 +2,20 @@
 <html lang="en">
 
 	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>Controllercons - Video Game Controller Icons</title>
-		<meta name="description" content="Something something controllercons">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<title>Controllercons: Video Game Controller Icons</title>
+		<meta name="description" content="Video game controllers merge with iconography to form controllercons, a free to use icon pack for web and desktop." />
+
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:creator" content="@KieranMcClung" />
+		
+		<meta property="og:url" content="https://controllercons.github.io/" />
+		<meta property="og:title" content="Controllercons: Video Game Controller Icons" />
+		<meta property="og:description" content="Video game controllers merge with iconography to form controllercons, a free to use icon pack for web and desktop." />
+		<meta property="og:image" content="img/og_image.png" />
 		
 		<link rel="icon" type="image/png" href="favicons/16x16.png" sizes="16x16">
 		<link rel="icon" type="image/png" href="favicons/32x32.png" sizes="32x32">
@@ -17,10 +26,9 @@
 		<link rel="apple-touch-icon" sizes="167x167" href="favicons/167x167.png">  
 
 		<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,900" rel="stylesheet">
-		<link href="css/main.css" rel="stylesheet" >
+		<link href="css/main.css" rel="stylesheet">
 		
-		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-		<script src="js/clipboard-min.js" type="text/javascript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="js/main.js" type="text/javascript"></script>
 		
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109208288-1"></script>
@@ -31,7 +39,7 @@
 
 		  gtag('config', 'UA-109208288-1');
 		</script>
-		
+
 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		<script>
 		  (adsbygoogle = window.adsbygoogle || []).push({
@@ -39,9 +47,20 @@
 			enable_page_level_ads: true
 		  });
 		</script>
+		
+		<script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
 	</head>
 
 	<body>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10&appId=1937383819833139';
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		
 		<header id="header">
 			<a href="#" id="home-link">
 				<img src="img/controllercons-logo-white.svg" alt="Controllercons logo" id="logo">
@@ -196,21 +215,26 @@
 							<a href="#" class="button">Typekit</a>
 						</div>
 
-						<h3>Usage</h3>
+						<h3 class="section-subtitle">Usage</h3>
 						<p>Controllercons are free to use for everyone, for both personal and commercial use. The only thing <strong>not permitted</strong> is the reselling of these icons.</p>
-						<p>If in doubt drop me a line on <a href="https://twitter.com/kieranmcclung" target="_blank" class="inline-link">Twitter</a> or view the <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" class="inline-link">license (CC BY-SA 4.0)</a></p>
+						<p>If in doubt of the do's and don'ts drop me a line on <a href="https://twitter.com/kieranmcclung" target="_blank" class="inline-link">Twitter</a> or view the <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" class="inline-link">license (CC BY-SA 4.0)</a></p>
 						<p>
 							<span style="font-size:0.8em">Although contradictory, attribution is not required but it's always appreciated.</span>
 						</p>
+					
+						<div id="ad-wrapper">
+							<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3758332248143085" data-ad-slot="1453560083" data-ad-format="auto"></ins>
+						</div>
 					</div>
 				</div>
 			</div>
 			
 			<section id="info" class="section text-section">
 				<div class="container">
+					<h2 class="section-title">Info.</h2>
 					<div class="column-container">
 						<div class="column">
-							<h3 class="section-title">Release Notes</h3>
+							<h3 class="section-subtitle">Release Notes</h3>
 							<ul class="list">
 								<li>
 									<strong>v1.0</strong>
@@ -223,14 +247,15 @@
 							</ul>
 						</div>
 						<div class="column">
-							<h3 class="section-title">Upcoming</h3>
+							<h3 class="section-subtitle">Upcoming</h3>
 							<ul class="list">
 								<li>
-									Handheld console icons including:
+									Handheld console icons:
 									<ul>
 										<li>Gameboy</li>
 										<li>Gameboy Color</li>
 										<li>Nintendo DS</li>
+										<li>And more&hellip; <a class="twitter-trigger" href="https://twitter.com/intent/tweet?text=Oi%2C%20%40KieranMcClung!%20I%20want%20this%20feature%20adding%20to&amp;hashtags=controllercons">?</a></li>
 									</ul>
 								</li>
 								<li>
@@ -241,13 +266,19 @@
 										<li>Wii Classic</li>
 										<li>Wii U Pro</li>
 										<li>Xbox Controller S</li>
-										<li>And more&hellip;</li>
+										<li>And more&hellip; <a class="twitter-trigger" href="https://twitter.com/intent/tweet?text=Oi%2C%20%40KieranMcClung!%20I%20want%20this%20feature%20adding%20to&amp;hashtags=controllercons">?</a></li>
 									</ul>
 								</li>
 								<li>WordPress Plugin</li>
-								<li>And more&hellip; <em>(probably)</em></li>
+								<li>And more&hellip; <em>(probably)</em> <a class="twitter-trigger" href="https://twitter.com/intent/tweet?text=Oi%2C%20%40KieranMcClung!%20I%20want%20this%20feature%20adding%20to&amp;hashtags=controllercons">?</a></li>
 							</ul>
 						</div>
+					</div>
+
+					<div id="social-buttons">
+						<h2 class="section-title">Share</h2>
+						<div class="fb-share-button" data-href="https://controllercons.github.io" data-layout="button_count" data-size="large" data-mobile-iframe="true"></div>
+						<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Check%20out%20this%20incredible%20icon%20set&amp;hashtags=controllercons" data-size="large">Tweet</a>
 					</div>
 				</div>
 			</section>
