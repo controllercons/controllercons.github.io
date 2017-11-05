@@ -60,20 +60,22 @@
 }
 
 #social-buttons {
+	display: flex;
+	justify-content: center;
 	padding-top: 3.5rem;
 	text-align: center;
-	
-	& > * {
-		
-		&:not(h2) {
-			display: inline-block;
-			margin-left: auto;
-			margin-right: 1em;
+}
 
-			&:last-child {
-				margin-right: auto;
-			}
-		}
+.social-button {
+	flex: 1;
+	padding: 0 1em;
+	
+	&:first-child {
+		text-align: right;
+	}
+	
+	&:last-child {
+		text-align: left;
 	}
 }
 
