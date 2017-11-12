@@ -42,7 +42,7 @@ a {
 	}
 	
 	&.twitter-trigger {
-		background-color: $main;
+		background-color: $accent;
 		border-radius: 50%;
 		color: $light;
 		display: inline-block;
@@ -126,4 +126,18 @@ a {
 			margin-right: auto;
 		}
 	}
+}
+
+code {
+	color: $main;
+}
+
+#demo-link {
+	display: inline-block;
+	font-size: 1.2em;
+	margin-bottom: 3em;
+}
+
+.text-align-left {
+	text-align: left;
 }

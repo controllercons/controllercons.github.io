@@ -1,0 +1,51 @@
+html {
+	color: #333;
+	font: 400 16px/1.6 "Helvetica Neue", Helvetica, Arial, sans-serif;
+	height: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 74rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+#footer,
+#header {
+	padding-bottom: 2rem;
+	padding-top: 2rem;
+	text-align: center;
+}
+
+#icons {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#icons li {
+	display: inline-block;
+	padding: 1em;
+	text-align: center;
+	width: 10em;
+}
+
+#icons li span {
+	display: block;
+}
+
+#icons li .unicode-character {
+	font-size: 1.5em;
+}
+
+#logo {
+	max-width: 5em;
+}
+
+.unicode-character {
+	font-family: "controllercons";
+}

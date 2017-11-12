@@ -5,9 +5,9 @@
 		var duration = 250,
 			$cell = $('#icons .cell'),
 			$date = $('#date'),
+			$dataTracker = $('[data-tracker]'),
 			$nav = $('#nav'),
-			$nav_toggle = $('#nav-toggle'),
-			$twitter_trigger = $('.twitter-trigger');
+			$navToggle = $('#nav-toggle');
 		
 		$date.html((new Date()).getFullYear());
 		
@@ -18,7 +18,7 @@
 				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 				if (target.length) {
 					$('html, body').animate({
-						scrollTop: target.offset().top - 150
+						scrollTop: target.offset().top - 100
 					}, 1000, function() {
 						if ( $nav.is(':visible') && $nav.css('position') === 'absolute' ) {
 							$nav.stop().slideUp();
@@ -30,7 +30,7 @@
 			}
 		});
 		
-		$nav_toggle.on('click', function() {
+		$navToggle.on('click', function() {
 			if ( $nav.is(':visible') ) {
 				$nav.stop().slideUp();
 			} else {
@@ -42,11 +42,17 @@
 			void(0);
 		});
 		
-		$twitter_trigger.on('click', function() {
-			
+		$dataTracker.on('click', function() {
+			var label = $(this).data('title');
+			ga.send('event', 'Button', 'Clicked', label);
 		});
 		
 		$(document).on('scroll', onScroll);
+		$(document).on('click', function() {
+			$cell.each(function() {
+				$(this).blur();
+			});
+		});
 		
 		onScroll();
 	});

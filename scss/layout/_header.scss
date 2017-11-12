@@ -16,6 +16,22 @@ header {
 	
 	&.filled {
 		background-color: $main;
+		
+		#nav-toggle {
+			
+			&:focus,
+			&:hover {
+				
+				.burger {
+					background-color: $dark;
+					
+					&:before,
+					&:after {
+						background-color: $dark;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -49,11 +65,11 @@ header {
 		outline: 0;
 		
 		.burger {
-			background-color: $dark;
+			background-color: $main;
 
 			&:before,
 			&:after {
-				background-color: $dark;
+				background-color: $main;
 			}		
 		}
 	}
@@ -114,25 +130,27 @@ nav {
 	}
 	
 	a {
-		color: #fff;
+		color: $accent;
 		display: block;
 		padding: 0.5em 0.75em;
-		
-		&:focus,
+
 		&:hover {
-			color: $accent;
+			color: $light;
 			
 			&:after {
 				height: 100%;
 			}
 		}
 		
+		&:focus {
+			color: $accent;
+		}
+		
 		&.active {
-			color: $accent !important;
-			
-			&:focus,
+			color: $dark !important;
+
 			&:hover {
-				color: $dark !important;
+				color: $light !important;
 			}
 		}
 	}

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: 'controllercons';
   src: url("font/controllercons.woff2?53498356") format("woff2"), url("font/controllercons.woff?53498356") format("woff");
@@ -471,7 +470,7 @@ a:focus, a:hover {
 }
 
 a.twitter-trigger {
-  background-color: #da2536;
+  background-color: #e0db3c;
   border-radius: 50%;
   color: #f2f6f9;
   display: inline-block;
@@ -554,6 +553,20 @@ a.twitter-trigger:focus, a.twitter-trigger:hover {
   margin-right: auto;
 }
 
+code {
+  color: #da2536;
+}
+
+#demo-link {
+  display: inline-block;
+  font-size: 1.2em;
+  margin-bottom: 3em;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
 h1 {
   font-size: 2.5em;
   font-weight: 900;
@@ -568,6 +581,16 @@ h2 {
 h3 {
   font-size: 1.5em;
   font-weight: 600;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  margin-top: 1.75em;
 }
 
 .section-subtitle,
@@ -588,176 +611,142 @@ h3 {
   width: 1em;
 }
 
-.cc-gamecube:before {
-  content: '\e800';
-}
-
-/* '' */
-.cc-gamecube-o:before {
-  content: '\e801';
-}
-
-/* '' */
-.cc-n64:before {
-  content: '\e802';
-}
-
-/* '' */
-.cc-n64-o:before {
-  content: '\e803';
-}
-
-/* '' */
 .cc-nes:before {
-  content: '\e804';
+  content: "\cc000";
 }
 
-/* '' */
 .cc-nes-o:before {
-  content: '\e805';
+  content: "\cc001";
 }
 
-/* '' */
-.cc-ps1:before {
-  content: '\e806';
-}
-
-/* '' */
-.cc-ps1-o:before {
-  content: '\e807';
-}
-
-/* '' */
-.cc-ps2:before {
-  content: '\e808';
-}
-
-/* '' */
-.cc-ps2-o:before {
-  content: '\e809';
-}
-
-/* '' */
-.cc-ps3:before {
-  content: '\e80a';
-}
-
-/* '' */
-.cc-ps3-o:before {
-  content: '\e80b';
-}
-
-/* '' */
 .cc-megadrive:before {
-  content: '\e80c';
+  content: "\cc002";
 }
 
-/* '' */
 .cc-megadrive-o:before {
-  content: '\e80d';
+  content: "\cc003";
 }
 
-/* '' */
 .cc-snes:before {
-  content: '\e80e';
+  content: "\cc004";
 }
 
-/* '' */
 .cc-snes-o:before {
-  content: '\e80f';
+  content: "\cc005";
 }
 
-/* '' */
+.cc-ps1:before {
+  content: "\cc006";
+}
+
+.cc-ps1-o:before {
+  content: "\cc007";
+}
+
+.cc-n64:before {
+  content: "\cc008";
+}
+
+.cc-n64-o:before {
+  content: "\cc009";
+}
+
+.cc-ps2:before {
+  content: "\cc010";
+}
+
+.cc-ps2-o:before {
+  content: "\cc011";
+}
+
 .cc-xbox:before {
-  content: '\e810';
+  content: "\cc012";
 }
 
-/* '' */
 .cc-xbox-o:before {
-  content: '\e811';
+  content: "\cc013";
 }
 
-/* '' */
+.cc-gamecube:before {
+  content: "\cc014";
+}
+
+.cc-gamecube-o:before {
+  content: "\cc015";
+}
+
 .cc-xbox360:before {
-  content: '\e812';
+  content: "\cc016";
 }
 
-/* '' */
 .cc-xbox360-o:before {
-  content: '\e813';
+  content: "\cc017";
 }
 
-/* '' */
+.cc-ps3:before {
+  content: "\cc018";
+}
+
+.cc-ps3-o:before {
+  content: "\cc019";
+}
+
 .cc-wii-remote:before {
-  content: '\e814';
+  content: "\cc020";
 }
 
-/* '' */
 .cc-wii-remote-o:before {
-  content: '\e815';
+  content: "\cc021";
 }
 
-/* '' */
 .cc-wiiu:before {
-  content: '\e816';
+  content: "\cc022";
 }
 
-/* '' */
 .cc-wiiu-o:before {
-  content: '\e817';
+  content: "\cc023";
 }
 
-/* '' */
 .cc-ps4:before {
-  content: '\e818';
+  content: "\cc024";
 }
 
-/* '' */
 .cc-ps4-o:before {
-  content: '\e819';
+  content: "\cc025";
 }
 
-/* '' */
-.cc-switch-joycon-l:before {
-  content: '\e81a';
-}
-
-/* '' */
-.cc-switch-joycon-l-o:before {
-  content: '\e81b';
-}
-
-/* '' */
-.cc-switch-joycon-r:before {
-  content: '\e81c';
-}
-
-/* '' */
-.cc-switch-joycon-r-o:before {
-  content: '\e81d';
-}
-
-/* '' */
-.cc-switch:before {
-  content: '\e81e';
-}
-
-/* '' */
-.cc-switch-o:before {
-  content: '\e81f';
-}
-
-/* '' */
 .cc-xboxone:before {
-  content: '\e820';
+  content: "\cc026";
 }
 
-/* '' */
 .cc-xboxone-o:before {
-  content: '\e821';
+  content: "\cc027";
 }
 
-/* '' */
+.cc-switch-joycon-l:before {
+  content: "\cc028";
+}
+
+.cc-switch-joycon-l-o:before {
+  content: "\cc029";
+}
+
+.cc-switch-joycon-r:before {
+  content: "\cc030";
+}
+
+.cc-switch-joycon-r-o:before {
+  content: "\cc031";
+}
+
+.cc-switch:before {
+  content: "\cc032";
+}
+
+.cc-switch-o:before {
+  content: "\cc033";
+}
+
 #ad-wrapper {
   padding-top: 1.5em;
 }
@@ -775,6 +764,10 @@ h3 {
   padding-right: 2rem;
 }
 
+.column-container {
+  margin-bottom: 3.5rem;
+}
+
 @media only screen and (min-width: 45em) {
   .column-container {
     -webkit-box-align: start;
@@ -786,11 +779,32 @@ h3 {
   }
 }
 
+.column {
+  margin-bottom: 2rem;
+}
+
 @media only screen and (min-width: 45em) {
   .column {
     -webkit-box-flex: 1;
         -ms-flex: 1 0;
             flex: 1 0;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 45em) {
+  .column:first-child {
+    padding-right: 1.5em;
+  }
+}
+
+.column:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 45em) {
+  .column:last-child {
+    padding-left: 1.5em;
   }
 }
 
@@ -826,7 +840,6 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 3.5rem;
   text-align: center;
 }
 
@@ -888,12 +901,17 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 20rem;
-  height: 25vh;
+  height: 9rem;
   overflow: hidden;
   position: relative;
   text-align: center;
   width: 50%;
+}
+
+@media only screen and (min-width: 45em) {
+  .cell {
+    height: 11rem;
+  }
 }
 
 @media only screen and (min-width: 52.5em) {
@@ -910,6 +928,7 @@ h3 {
 
 @media only screen and (min-width: 120em) {
   .cell {
+    height: 15rem;
     width: 16.66%;
   }
 }
@@ -940,6 +959,18 @@ h3 {
 }
 
 @media only screen and (min-width: 45em) {
+  .cell i {
+    font-size: 8em;
+  }
+}
+
+@media only screen and (min-width: 62.5em) {
+  .cell i {
+    font-size: 6em;
+  }
+}
+
+@media only screen and (min-width: 120em) {
   .cell i {
     font-size: 8em;
   }
@@ -985,6 +1016,14 @@ header.filled {
   background-color: #da2536;
 }
 
+header.filled #nav-toggle:focus .burger, header.filled #nav-toggle:hover .burger {
+  background-color: #082e41;
+}
+
+header.filled #nav-toggle:focus .burger:before, header.filled #nav-toggle:focus .burger:after, header.filled #nav-toggle:hover .burger:before, header.filled #nav-toggle:hover .burger:after {
+  background-color: #082e41;
+}
+
 #home-link {
   display: block;
   -webkit-box-flex: 1;
@@ -1022,11 +1061,11 @@ header.filled {
 }
 
 #nav-toggle:focus .burger, #nav-toggle:hover .burger {
-  background-color: #082e41;
+  background-color: #da2536;
 }
 
 #nav-toggle:focus .burger:before, #nav-toggle:focus .burger:after, #nav-toggle:hover .burger:before, #nav-toggle:hover .burger:after {
-  background-color: #082e41;
+  background-color: #da2536;
 }
 
 nav {
@@ -1094,25 +1133,29 @@ nav li:last-child {
 }
 
 nav a {
-  color: #fff;
+  color: #e0db3c;
   display: block;
   padding: 0.5em 0.75em;
 }
 
-nav a:focus, nav a:hover {
-  color: #e0db3c;
+nav a:hover {
+  color: #f2f6f9;
 }
 
-nav a:focus:after, nav a:hover:after {
+nav a:hover:after {
   height: 100%;
 }
 
-nav a.active {
-  color: #e0db3c !important;
+nav a:focus {
+  color: #e0db3c;
 }
 
-nav a.active:focus, nav a.active:hover {
+nav a.active {
   color: #082e41 !important;
+}
+
+nav a.active:hover {
+  color: #f2f6f9 !important;
 }
 
 #hero {
@@ -1143,7 +1186,7 @@ nav a.active:focus, nav a.active:hover {
   -webkit-box-flex: 1;
       -ms-flex: 1 100%;
           flex: 1 100%;
-  font-size: 0.4em;
+  font-size: 0.3em;
   max-width: 81.25rem;
   padding: 0 2rem 6rem;
 }
@@ -1278,7 +1321,7 @@ nav a.active:focus, nav a.active:hover {
 }
 
 .megadrive {
-  background-color: #000000;
+  background-color: #000;
   color: #f2f6f9;
 }
 
@@ -1296,17 +1339,17 @@ nav a.active:focus, nav a.active:hover {
 }
 
 .ps2 {
-  background-color: #000000;
+  background-color: #000;
   color: #f2f6f9;
 }
 
 .xbox {
-  background-color: #000000;
+  background-color: #000;
   color: #f2f6f9;
 }
 
 .ps3 {
-  background-color: #000000;
+  background-color: #000;
   color: #f2f6f9;
 }
 
@@ -1318,7 +1361,7 @@ nav a.active:focus, nav a.active:hover {
   background-color: #fff;
 }
 
-.wii-u {
+.wiiu {
   background-color: #fff;
 }
 
@@ -1332,12 +1375,11 @@ nav a.active:focus, nav a.active:hover {
   color: #f2f6f9;
 }
 
-/*
 .switch {
-	background-color: $switch-hex;
-	color: $light;
+  background-color: #444;
+  color: #f2f6f9;
 }
-*/
+
 .switch-joycon-l {
   background-color: #00ccf0;
 }
@@ -1350,7 +1392,11 @@ nav a.active:focus, nav a.active:hover {
   list-style: none;
   margin: 0;
   max-width: 30em;
-  padding: 0 2em 0 0;
+  padding: 0;
+}
+
+.list.light li {
+  border-bottom-color: rgba(242, 246, 249, 0.1);
 }
 
 .list li {
@@ -1367,14 +1413,15 @@ nav a.active:focus, nav a.active:hover {
 }
 
 .list ul {
-  background-color: #e0db3c;
+  background-color: #da2536;
+  color: #f2f6f9;
   margin-bottom: -0.5em;
   margin-top: 0.5em;
   padding: 0.75em;
 }
 
 .list ul .twitter-trigger {
-  color: #e0db3c;
+  color: #da2536;
 }
 
 .list strong {

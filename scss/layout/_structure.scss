@@ -16,6 +16,7 @@
 }
 
 .column-container {
+	margin-bottom: 3.5rem;
 	
 	@media only screen and (min-width: $breakpoint-small) {
 		align-items: flex-start;
@@ -24,9 +25,25 @@
 }
 
 .column {
+	margin-bottom: 2rem;
 	
 	@media only screen and (min-width: $breakpoint-small) {
 		flex: 1 0;
+		margin-bottom: 0;
+	}
+	
+	&:first-child {
+		@media only screen and (min-width: $breakpoint-small) {
+			padding-right: 1.5em;	
+		}
+	}
+	
+	&:last-child {
+		margin-bottom: 0;
+		
+		@media only screen and (min-width: $breakpoint-small) {
+			padding-left: 1.5em;
+		}
 	}
 }
 
@@ -62,7 +79,6 @@
 #social-buttons {
 	display: flex;
 	justify-content: center;
-	padding-top: 3.5rem;
 	text-align: center;
 }
 

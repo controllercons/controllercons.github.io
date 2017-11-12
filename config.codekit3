@@ -395,6 +395,89 @@
 		"oF": 2,
 		"oS": 1,
 		"uL": 1
+		},
+	"\/typekit.zip": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/typekit.zip",
+		"oF": 0
+		},
+	"\/typekit\/controllercons.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/typekit\/controllercons.ttf",
+		"oF": 0
+		},
+	"\/typekit\/icons.png": {
+		"ft": 32768,
+		"iS": 74500,
+		"oA": 0,
+		"oAP": "\/typekit\/icons.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/typekit\/icons.psd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/typekit\/icons.psd",
+		"oF": 0
+		},
+	"\/webfont.zip": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/webfont.zip",
+		"oF": 0
+		},
+	"\/webfont\/controllercons\/css\/controllercons-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/webfont\/controllercons\/css\/controllercons-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/webfont\/controllercons\/css\/controllercons.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/webfont\/controllercons\/css\/controllercons-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/webfont\/controllercons\/font\/controllercons.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/webfont\/controllercons\/font\/controllercons.woff",
+		"oF": 0
+		},
+	"\/webfont\/controllercons\/font\/controllercons.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/webfont\/controllercons\/font\/controllercons.woff2",
+		"oF": 0
+		},
+	"\/webfont\/demo\/demo.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/webfont\/demo\/demo-min.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"\/webfont\/demo\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/webfont\/demo\/index.html",
+		"oF": 0
 		}
 	},
 "hooks": [
