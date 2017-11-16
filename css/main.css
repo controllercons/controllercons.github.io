@@ -1,10 +1,3 @@
-@font-face {
-  font-family: 'controllercons';
-  src: url("font/controllercons.woff2?53498356") format("woff2"), url("font/controllercons.woff?53498356") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 *,
 *:before,
 *:after {
@@ -425,8 +418,8 @@ template {
 }
 
 @font-face {
-  font-family: "controllercons";
-  src: url("../font/controllercons.woff2") format("woff2"), url("../font/controllercons.woff") format("woff");
+  font-family: "Controllercons";
+  src: url("../font/controllercons.woff2?v=1.0.0") format("woff2"), url("../font/controllercons.woff?v=1.0.0") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -483,6 +476,20 @@ a.twitter-trigger {
 
 a.twitter-trigger:focus, a.twitter-trigger:hover {
   background-color: #082e41;
+}
+
+.bmc-button img {
+  border-radius: 1.67px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.75s ease;
+  transition: 0.75s ease;
+}
+
+.bmc-button img:hover, .bmc-button img:active, .bmc-button img:focus {
+  -webkit-box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.2);
+  opacity: 0.85;
 }
 
 .burger {
@@ -600,15 +607,10 @@ h5 {
 
 .cc:before {
   display: inline-block;
-  font-family: "controllercons";
-  font-style: normal;
-  text-transform: none;
-  font-variant: normal;
-  font-weight: normal;
+  font: normal normal normal 16px/1 Controllercons;
+  font-size: inherit;
   speak: none;
-  text-align: center;
   text-decoration: inherit;
-  width: 1em;
 }
 
 .cc-nes:before {
@@ -754,6 +756,14 @@ h5 {
 #ad-wrapper > * {
   margin-left: auto;
   margin-right: auto;
+}
+
+#begging {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 30em;
+  padding-top: 3em;
+  text-align: center;
 }
 
 .container {

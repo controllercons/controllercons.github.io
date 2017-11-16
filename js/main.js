@@ -5,7 +5,7 @@
 		var duration = 250,
 			$cell = $('#icons .cell'),
 			$date = $('#date'),
-			$dataTracker = $('[data-tracker]'),
+			$dataTracker = $('[data-track]'),
 			$nav = $('#nav'),
 			$navToggle = $('#nav-toggle');
 		
@@ -48,11 +48,6 @@
 		});
 		
 		$(document).on('scroll', onScroll);
-		$(document).on('click', function() {
-			$cell.each(function() {
-				$(this).blur();
-			});
-		});
 		
 		onScroll();
 	});

@@ -1,11 +1,3 @@
-@font-face {
-	font-family: 'controllercons';
-	src: url( 'font/controllercons.woff2?53498356' ) format( 'woff2' ),
-		 url( 'font/controllercons.woff?53498356' ) format( 'woff' );
-	font-weight: normal;
-	font-style: normal;
-}
-
 @import	"globals/normalise",
 		"globals/variables",
 		"globals/mixins",

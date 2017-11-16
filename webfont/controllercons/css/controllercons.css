@@ -1,22 +1,17 @@
 @font-face {
-  font-family: "controllercons";
-  src: url("../font/controllercons.woff2") format("woff2"),
-       url("../font/controllercons.woff") format("woff");
+  font-family: "Controllercons";
+  src: url("../font/controllercons.woff2?v=1.0.0") format("woff2"),
+       url("../font/controllercons.woff?v=1.0.0") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 .cc:before {
   display: inline-block;
-  font-family: "controllercons";
-  font-style: normal;
-  text-transform: none;
-  font-variant: normal;
-  font-weight: normal;
+  font: normal normal normal 16px/1 Controllercons;
+  font-size: inherit;
   speak: none;
-  text-align: center;
   text-decoration: inherit;
-  width: 1em;
 }
 
 .cc-nes:before {

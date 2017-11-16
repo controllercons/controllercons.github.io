@@ -25,12 +25,12 @@ html {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	text-align: center;
 }
 
 #icons li {
 	display: inline-block;
 	padding: 1em;
-	text-align: center;
 	width: 10em;
 }
 
@@ -47,5 +47,5 @@ html {
 }
 
 .unicode-character {
-	font-family: "controllercons";
+	font-family: "Controllercons";
 }
