@@ -25,6 +25,7 @@
 		<link rel="apple-touch-icon" sizes="152x152" href="favicons/152x152.png">  
 		<link rel="apple-touch-icon" sizes="167x167" href="favicons/167x167.png">  
 
+		<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,900">
 		<link rel="stylesheet" href="css/main.css">
 		
@@ -41,6 +42,29 @@
 		</script>
 		
 		<script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+
+		<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+		<script>
+		window.addEventListener("load", function(){
+			window.cookieconsent.initialise({
+				"palette": {
+					"popup": {
+						"background": "#da2536",
+						"text": "#f2f6f9"
+					},
+					"button": {
+						"background": "transparent",
+						"text": "#e0db3c",
+						"border": "#e0db3c"
+					}
+				},
+				"content": {
+					"message": "This website uses cookies to track user interaction via Google Analytics",
+					"href": "https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage"
+				}
+			})
+		});
+		</script>
 	</head>
 
 	<body>
