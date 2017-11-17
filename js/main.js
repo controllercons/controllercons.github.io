@@ -44,7 +44,7 @@
 		
 		$dataTracker.on('click', function() {
 			var label = $(this).data('title');
-			ga('send', 'event', 'Button', 'Clicked', label);
+			ga('gtm.send', 'event', 'Button', 'Clicked', label);
 		});
 		
 		$(document).on('scroll', onScroll);
