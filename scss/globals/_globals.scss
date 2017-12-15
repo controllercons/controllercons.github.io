@@ -107,6 +107,7 @@ a {
 	background-color: $accent;
 	border-radius: 0.1em;
 	color: $dark;
+	display: inline-block;
 	font-weight: 600;
 	line-height: 1;
 	padding: 0.6em 1em;
@@ -133,7 +134,6 @@ a {
 }
 
 .button-container {
-	padding-bottom: 3.5rem;
 	
 	.button {
 		margin-right: 0.5em;
@@ -146,12 +146,12 @@ a {
 
 code {
 	color: $main;
+	word-break: break-all;
 }
 
 #demo-link {
 	display: inline-block;
 	font-size: 1.2em;
-	margin-bottom: 3em;
 }
 
 .text-align-left {

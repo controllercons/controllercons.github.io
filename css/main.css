@@ -525,6 +525,7 @@ a.twitter-trigger:focus, a.twitter-trigger:hover {
   background-color: #e0db3c;
   border-radius: 0.1em;
   color: #082e41;
+  display: inline-block;
   font-weight: 600;
   line-height: 1;
   padding: 0.6em 1em;
@@ -548,10 +549,6 @@ a.twitter-trigger:focus, a.twitter-trigger:hover {
   color: #f2f6f9;
 }
 
-.button-container {
-  padding-bottom: 3.5rem;
-}
-
 .button-container .button {
   margin-right: 0.5em;
 }
@@ -562,12 +559,12 @@ a.twitter-trigger:focus, a.twitter-trigger:hover {
 
 code {
   color: #da2536;
+  word-break: break-all;
 }
 
 #demo-link {
   display: inline-block;
   font-size: 1.2em;
-  margin-bottom: 3em;
 }
 
 .text-align-left {
@@ -866,6 +863,10 @@ h5 {
 
 .social-button:last-child {
   text-align: left;
+}
+
+.sub-section {
+  margin-top: 3.5em;
 }
 
 @media only screen and (min-width: 45em) {
@@ -1407,6 +1408,10 @@ nav a.active:hover {
 
 .list.light li {
   border-bottom-color: rgba(242, 246, 249, 0.1);
+}
+
+.list a:not(.twitter-trigger):focus, .list a:not(.twitter-trigger):hover {
+  color: #082e41;
 }
 
 .list li {

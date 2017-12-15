@@ -11,6 +11,17 @@
 		}
 	}
 	
+	a {
+		
+		&:not(.twitter-trigger) {
+			
+			&:focus,
+			&:hover {
+				color: $dark;
+			}
+		}
+	}
+	
 	li {
 		border-bottom: 2px solid rgba($dark, 0.1);
 		display: block;
