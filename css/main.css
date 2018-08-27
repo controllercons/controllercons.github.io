@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *:before,
 *:after {
@@ -419,7 +420,7 @@ template {
 
 @font-face {
   font-family: "Controllercons";
-  src: url("../font/controllercons.woff2?v=1.0.0") format("woff2"), url("../font/controllercons.woff?v=1.0.0") format("woff");
+  src: url("../font/controllercons.woff2?v=1.1.0") format("woff2"), url("../font/controllercons.woff?v=1.1.0") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -444,14 +445,14 @@ html {
 }
 
 body {
-  background: #082e41;
+  background: #000000;
   height: 100%;
   margin: 0;
 }
 
 a {
   background-color: transparent;
-  color: #e0db3c;
+  color: #1ffb8f;
   text-decoration: none;
   -webkit-text-decoration-skip: objects;
   -webkit-transition: all 0.75s ease;
@@ -459,13 +460,13 @@ a {
 }
 
 a:focus, a:hover {
-  color: #da2536;
+  color: #4e00cc;
 }
 
 a.twitter-trigger {
-  background-color: #e0db3c;
+  background-color: #1ffb8f;
   border-radius: 50%;
-  color: #f2f6f9;
+  color: #ffffff;
   display: inline-block;
   font-size: 0.8em;
   height: 1.25em;
@@ -475,7 +476,7 @@ a.twitter-trigger {
 }
 
 a.twitter-trigger:focus, a.twitter-trigger:hover {
-  background-color: #082e41;
+  background-color: #000000;
 }
 
 .bmc-button img {
@@ -493,7 +494,7 @@ a.twitter-trigger:focus, a.twitter-trigger:hover {
 }
 
 .burger {
-  background-color: #e0db3c;
+  background-color: #1ffb8f;
   display: block;
   height: 4px;
   position: relative;
@@ -503,7 +504,7 @@ a.twitter-trigger:focus, a.twitter-trigger:hover {
 }
 
 .burger:before, .burger:after {
-  background-color: #e0db3c;
+  background-color: #1ffb8f;
   content: '';
   height: 4px;
   left: 0;
@@ -522,9 +523,9 @@ a.twitter-trigger:focus, a.twitter-trigger:hover {
 }
 
 .button {
-  background-color: #e0db3c;
+  background-color: #1ffb8f;
   border-radius: 0.1em;
-  color: #082e41;
+  color: #000000;
   display: inline-block;
   font-weight: 600;
   line-height: 1;
@@ -533,20 +534,20 @@ a.twitter-trigger:focus, a.twitter-trigger:hover {
 }
 
 .button:focus, .button:hover {
-  background-color: #da2536;
-  color: #082e41;
+  background-color: #4e00cc;
+  color: #000000;
 }
 
 .button.ghost {
   background-color: transparent;
-  border: 1px solid #f2f6f9;
-  color: #f2f6f9;
+  border: 1px solid #ffffff;
+  color: #ffffff;
 }
 
 .button.ghost:focus, .button.ghost:hover {
-  background-color: #e0db3c;
-  border-color: #e0db3c;
-  color: #f2f6f9;
+  background-color: #1ffb8f;
+  border-color: #1ffb8f;
+  color: #ffffff;
 }
 
 .button-container .button {
@@ -558,7 +559,7 @@ a.twitter-trigger:focus, a.twitter-trigger:hover {
 }
 
 code {
-  color: #da2536;
+  color: #4e00cc;
   word-break: break-all;
 }
 
@@ -574,17 +575,22 @@ code {
 h1 {
   font-size: 2.5em;
   font-weight: 900;
+  text-transform: uppercase;
 }
 
 h2 {
-  color: #da2536;
+  color: #4e00cc;
   font-size: 1.9em;
-  font-weight: 600;
+  font-weight: 900;
+  text-shadow: 0 2px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
 }
 
 h3 {
   font-size: 1.5em;
-  font-weight: 600;
+  font-weight: 900;
+  text-shadow: 0 2px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
 }
 
 h4 {
@@ -602,6 +608,10 @@ h5 {
   margin-top: 0;
 }
 
+.section-title-top-margin {
+  margin-top: 1em;
+}
+
 .cc:before {
   display: inline-block;
   font: normal normal normal 16px/1 Controllercons;
@@ -611,141 +621,245 @@ h5 {
 }
 
 .cc-nes:before {
-  content: "\cc000";
+  content: '󌀀';
 }
 
+/* '\cc000' */
 .cc-nes-o:before {
-  content: "\cc001";
+  content: '󌀁';
 }
 
+/* '\cc001' */
 .cc-megadrive:before {
-  content: "\cc002";
+  content: '󌀂';
 }
 
+/* '\cc002' */
 .cc-megadrive-o:before {
-  content: "\cc003";
+  content: '󌀃';
 }
 
+/* '\cc003' */
 .cc-snes:before {
-  content: "\cc004";
+  content: '󌀄';
 }
 
+/* '\cc004' */
 .cc-snes-o:before {
-  content: "\cc005";
+  content: '󌀅';
 }
 
-.cc-ps1:before {
-  content: "\cc006";
+/* '\cc005' */
+.cc-psx:before {
+  content: '󌀆';
 }
 
-.cc-ps1-o:before {
-  content: "\cc007";
+/* '\cc006' */
+.cc-psx-o:before {
+  content: '󌀇';
 }
 
+/* '\cc007' */
 .cc-n64:before {
-  content: "\cc008";
+  content: '󌀈';
 }
 
+/* '\cc008' */
 .cc-n64-o:before {
-  content: "\cc009";
+  content: '󌀉';
 }
 
+/* '\cc009' */
 .cc-ps2:before {
-  content: "\cc010";
+  content: '󌀐';
 }
 
+/* '\cc010' */
 .cc-ps2-o:before {
-  content: "\cc011";
+  content: '󌀑';
 }
 
+/* '\cc011' */
 .cc-xbox:before {
-  content: "\cc012";
+  content: '󌀒';
 }
 
+/* '\cc012' */
 .cc-xbox-o:before {
-  content: "\cc013";
+  content: '󌀓';
 }
 
+/* '\cc013' */
 .cc-gamecube:before {
-  content: "\cc014";
+  content: '󌀔';
 }
 
+/* '\cc014' */
 .cc-gamecube-o:before {
-  content: "\cc015";
+  content: '󌀕';
 }
 
+/* '\cc015' */
 .cc-xbox360:before {
-  content: "\cc016";
+  content: '󌀖';
 }
 
+/* '\cc016' */
 .cc-xbox360-o:before {
-  content: "\cc017";
+  content: '󌀗';
 }
 
+/* '\cc017' */
 .cc-ps3:before {
-  content: "\cc018";
+  content: '󌀘';
 }
 
+/* '\cc018' */
 .cc-ps3-o:before {
-  content: "\cc019";
+  content: '󌀙';
 }
 
-.cc-wii-remote:before {
-  content: "\cc020";
+/* '\cc019' */
+.cc-wii:before {
+  content: '󌀠';
 }
 
-.cc-wii-remote-o:before {
-  content: "\cc021";
+/* '\cc020' */
+.cc-wii-o:before {
+  content: '󌀡';
 }
 
+/* '\cc021' */
 .cc-wiiu:before {
-  content: "\cc022";
+  content: '󌀢';
 }
 
+/* '\cc022' */
 .cc-wiiu-o:before {
-  content: "\cc023";
+  content: '󌀣';
 }
 
+/* '\cc023' */
 .cc-ps4:before {
-  content: "\cc024";
+  content: '󌀤';
 }
 
+/* '\cc024' */
 .cc-ps4-o:before {
-  content: "\cc025";
+  content: '󌀥';
 }
 
+/* '\cc025' */
 .cc-xboxone:before {
-  content: "\cc026";
+  content: '󌀦';
 }
 
+/* '\cc026' */
 .cc-xboxone-o:before {
-  content: "\cc027";
+  content: '󌀧';
 }
 
-.cc-switch-joycon-l:before {
-  content: "\cc028";
+/* '\cc027' */
+.cc-joyconl:before {
+  content: '󌀨';
 }
 
-.cc-switch-joycon-l-o:before {
-  content: "\cc029";
+/* '\cc028' */
+.cc-joyconl-o:before {
+  content: '󌀩';
 }
 
-.cc-switch-joycon-r:before {
-  content: "\cc030";
+/* '\cc029' */
+.cc-joyconr:before {
+  content: '󌀰';
 }
 
-.cc-switch-joycon-r-o:before {
-  content: "\cc031";
+/* '\cc030' */
+.cc-joyconr-o:before {
+  content: '󌀱';
 }
 
-.cc-switch:before {
-  content: "\cc032";
+/* '\cc031' */
+.cc-atari2600:before {
+  content: '󌄀';
 }
 
-.cc-switch-o:before {
-  content: "\cc033";
+/* '\cc100' */
+.cc-atari2600-o:before {
+  content: '󌄁';
 }
 
+/* '\cc101' */
+.cc-mastersystem:before {
+  content: '󌄂';
+}
+
+/* '\cc102' */
+.cc-mastersystem-o:before {
+  content: '󌄃';
+}
+
+/* '\cc103' */
+.cc-virtualboy:before {
+  content: '󌄄';
+}
+
+/* '\cc104' */
+.cc-virtualboy-o:before {
+  content: '󌄅';
+}
+
+/* '\cc105' */
+.cc-dreamcast:before {
+  content: '󌄆';
+}
+
+/* '\cc106' */
+.cc-dreamcast-o:before {
+  content: '󌄇';
+}
+
+/* '\cc107' */
+.cc-xboxs:before {
+  content: '󌄈';
+}
+
+/* '\cc108' */
+.cc-xboxs-o:before {
+  content: '󌄉';
+}
+
+/* '\cc109' */
+.cc-wiiclassic:before {
+  content: '󌄐';
+}
+
+/* '\cc110' */
+.cc-wiiclassic-o:before {
+  content: '󌄑';
+}
+
+/* '\cc111' */
+.cc-wiiupro:before {
+  content: '󌄒';
+}
+
+/* '\cc112' */
+.cc-wiiupro-o:before {
+  content: '󌄓';
+}
+
+/* '\cc113' */
+.cc-switchpro:before {
+  content: '󌄔';
+}
+
+/* '\cc114' */
+.cc-switchpro-o:before {
+  content: '󌄕';
+}
+
+/* '\cc115' */
 #ad-wrapper {
   padding-top: 1.5em;
 }
@@ -824,8 +938,8 @@ h5 {
 }
 
 .section:nth-child(even) {
-  background-color: #f2f6f9;
-  color: #082e41;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .section.text-section {
@@ -884,13 +998,13 @@ h5 {
 }
 
 .text-area .inline-link {
-  background-color: #e0db3c;
-  color: #082e41;
+  background-color: #1ffb8f;
+  color: #000000;
   text-decoration: underline;
 }
 
 .text-area .inline-link:focus, .text-area .inline-link:hover {
-  color: #da2536;
+  color: #4e00cc;
 }
 
 .grid {
@@ -907,8 +1021,7 @@ h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #082e41;
-  cursor: pointer;
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -933,27 +1046,24 @@ h5 {
 
 @media only screen and (min-width: 62.5em) {
   .cell {
-    width: 20%;
+    height: 16rem;
+    width: 25%;
   }
 }
 
 @media only screen and (min-width: 120em) {
   .cell {
-    height: 15rem;
-    width: 16.66%;
+    height: 22rem;
+    width: 20%;
   }
 }
 
 .cell:focus i[data-original], .cell:hover i[data-original] {
   opacity: 0;
-  -webkit-transform: translate(-150%, -50%);
-          transform: translate(-150%, -50%);
 }
 
 .cell:focus i[data-outlined], .cell:hover i[data-outlined] {
   opacity: 1;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 .cell i {
@@ -977,20 +1087,22 @@ h5 {
 
 @media only screen and (min-width: 62.5em) {
   .cell i {
-    font-size: 6em;
+    font-size: 12em;
   }
 }
 
 @media only screen and (min-width: 120em) {
   .cell i {
-    font-size: 8em;
+    font-size: 14em;
   }
 }
 
 .cell i[data-outlined] {
   opacity: 0;
-  -webkit-transform: translate(-150%, -50%);
-          transform: translate(-150%, -50%);
+}
+
+.cell i:before {
+  text-shadow: 0 3px rgba(0, 0, 0, 0.33);
 }
 
 .cell .inner {
@@ -1024,15 +1136,15 @@ header {
 }
 
 header.filled {
-  background-color: #da2536;
+  background-color: #4e00cc;
 }
 
 header.filled #nav-toggle:focus .burger, header.filled #nav-toggle:hover .burger {
-  background-color: #082e41;
+  background-color: #000000;
 }
 
 header.filled #nav-toggle:focus .burger:before, header.filled #nav-toggle:focus .burger:after, header.filled #nav-toggle:hover .burger:before, header.filled #nav-toggle:hover .burger:after {
-  background-color: #082e41;
+  background-color: #000000;
 }
 
 #home-link {
@@ -1072,15 +1184,15 @@ header.filled #nav-toggle:focus .burger:before, header.filled #nav-toggle:focus 
 }
 
 #nav-toggle:focus .burger, #nav-toggle:hover .burger {
-  background-color: #da2536;
+  background-color: #4e00cc;
 }
 
 #nav-toggle:focus .burger:before, #nav-toggle:focus .burger:after, #nav-toggle:hover .burger:before, #nav-toggle:hover .burger:after {
-  background-color: #da2536;
+  background-color: #4e00cc;
 }
 
 nav {
-  background-color: #ae1e2b;
+  background-color: #3b0099;
   display: none;
   left: 0;
   max-height: 80vh;
@@ -1144,13 +1256,14 @@ nav li:last-child {
 }
 
 nav a {
-  color: #e0db3c;
+  color: #1ffb8f;
   display: block;
   padding: 0.5em 0.75em;
+  text-shadow: 0 3px rgba(0, 0, 0, 0.33);
 }
 
 nav a:hover {
-  color: #f2f6f9;
+  color: #ffffff;
 }
 
 nav a:hover:after {
@@ -1158,21 +1271,22 @@ nav a:hover:after {
 }
 
 nav a:focus {
-  color: #e0db3c;
+  color: #1ffb8f;
 }
 
 nav a.active {
-  color: #082e41 !important;
+  color: #000000 !important;
+  text-shadow: none;
 }
 
 nav a.active:hover {
-  color: #f2f6f9 !important;
+  color: #ffffff !important;
 }
 
 #hero {
-  background: #082e41 url("../img/hero-background.svg");
-  background: url("../img/hero-background.svg"), -webkit-gradient(linear, left top, left bottom, from(#082e41), to(#062331));
-  background: url("../img/hero-background.svg"), linear-gradient(#082e41, #062331);
+  background: #4e00cc url("../img/hero-background.svg");
+  background: url("../img/hero-background.svg"), -webkit-gradient(linear, left top, left bottom, from(#4e00cc), to(#4700ba));
+  background: url("../img/hero-background.svg"), linear-gradient(#4e00cc, #4700ba);
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1219,6 +1333,7 @@ nav a.active:hover {
   color: #fff;
   line-height: 1;
   margin: 0;
+  text-shadow: 0 3px rgba(0, 0, 0, 0.33);
   text-transform: uppercase;
 }
 
@@ -1262,16 +1377,16 @@ nav a.active:hover {
 }
 
 .toggle button.outline:focus, .toggle button.outline:hover {
-  border-color: #da2536;
+  border-color: #4e00cc;
   outline: 0;
 }
 
 .toggle button.outline.active {
-  border-color: #e0db3c;
+  border-color: #1ffb8f;
 }
 
 .toggle button.outline.active:hover {
-  border-color: #da2536;
+  border-color: #4e00cc;
 }
 
 .toggle button.solid {
@@ -1280,16 +1395,16 @@ nav a.active:hover {
 }
 
 .toggle button.solid:focus, .toggle button.solid:hover {
-  background-color: #da2536;
+  background-color: #4e00cc;
   outline: 0;
 }
 
 .toggle button.solid.active {
-  background-color: #e0db3c;
+  background-color: #1ffb8f;
 }
 
 .toggle button.solid.active:hover {
-  background-color: #da2536;
+  background-color: #4e00cc;
 }
 
 #tooltip {
@@ -1297,7 +1412,7 @@ nav a.active:hover {
   border: 0;
   border-radius: 0.2em;
   bottom: -1.25em;
-  color: #082e41;
+  color: #000000;
   font-size: 0.8em;
   left: 50%;
   opacity: 0;
@@ -1323,80 +1438,100 @@ nav a.active:hover {
   width: 0;
 }
 
-.nes {
-  background-color: #d2d2d2;
+.atari2600 {
+  background-color: #8f481c;
 }
 
-.snes {
-  background-color: #d2d2d2;
-}
-
-.megadrive {
-  background-color: #000;
-  color: #f2f6f9;
-}
-
-.n64 {
-  background-color: #b9b9b9;
-}
-
-.psx {
-  background-color: #9e9e9e;
+.dreamcast {
+  background-color: #216ce1;
 }
 
 .gamecube {
   background-color: #585fc8;
-  color: #f2f6f9;
 }
 
-.ps2 {
-  background-color: #000;
-  color: #f2f6f9;
-}
-
-.xbox {
-  background-color: #000;
-  color: #f2f6f9;
-}
-
-.ps3 {
-  background-color: #000;
-  color: #f2f6f9;
-}
-
-.xbox-360 {
-  background-color: #f7f7ed;
-}
-
-.wii-remote {
-  background-color: #fff;
-}
-
-.wiiu {
-  background-color: #fff;
-}
-
-.ps4 {
-  background-color: #000;
-  color: #f2f6f9;
-}
-
-.xbox-one {
-  background-color: #000;
-  color: #f2f6f9;
-}
-
-.switch {
-  background-color: #444;
-  color: #f2f6f9;
-}
-
-.switch-joycon-l {
+.joyconl {
   background-color: #00ccf0;
 }
 
-.switch-joycon-r {
+.joyconr {
   background-color: #ff4a3d;
+}
+
+.mastersystem {
+  background-color: #771516;
+}
+
+.megadrive {
+  background-color: #fe2c2b;
+}
+
+.n64 {
+  background-color: #069330;
+}
+
+.nes {
+  background-color: #da3835;
+}
+
+.psx {
+  background-color: #01cfc5;
+}
+
+.ps2 {
+  background-color: #fc5950;
+}
+
+.ps3 {
+  background-color: #77adeb;
+}
+
+.ps4 {
+  background-color: #f889d6;
+}
+
+.snes {
+  background-color: #edca3a;
+}
+
+.switchpro {
+  background-color: #434449;
+}
+
+.virtualboy {
+  background-color: #ac0002;
+}
+
+.wii {
+  background-color: #ef6886;
+}
+
+.wiiclassic {
+  background-color: #38b3ff;
+}
+
+.wiiu {
+  background-color: #5dd9ff;
+}
+
+.wiiupro {
+  background-color: #b4223a;
+}
+
+.xbox {
+  background-color: #9dcf38;
+}
+
+.xboxs {
+  background-color: #9dcf38;
+}
+
+.xbox-360 {
+  background-color: #b5d431;
+}
+
+.xbox-one {
+  background-color: #8ac85b;
 }
 
 .list {
@@ -1407,15 +1542,15 @@ nav a.active:hover {
 }
 
 .list.light li {
-  border-bottom-color: rgba(242, 246, 249, 0.1);
+  border-bottom-color: rgba(255, 255, 255, 0.33);
 }
 
 .list a:not(.twitter-trigger):focus, .list a:not(.twitter-trigger):hover {
-  color: #082e41;
+  color: #000000;
 }
 
 .list li {
-  border-bottom: 2px solid rgba(8, 46, 65, 0.1);
+  border-bottom: 2px solid #310080;
   display: block;
   margin-bottom: 0.5em;
   padding-bottom: 0.5em;
@@ -1428,19 +1563,33 @@ nav a.active:hover {
 }
 
 .list ul {
-  background-color: #da2536;
-  color: #f2f6f9;
+  background-color: #4e00cc;
+  color: #ffffff;
   margin-bottom: -0.5em;
   margin-top: 0.5em;
   padding: 0.75em;
 }
 
+.list ul code {
+  color: #1ffb8f;
+}
+
 .list ul .twitter-trigger {
-  color: #da2536;
+  color: #4e00cc;
+}
+
+.list ul ul {
+  margin-top: 0;
+  padding-left: 1em;
+}
+
+.list ul ul li {
+  font-size: 0.9em;
 }
 
 .list strong {
   font-size: 1.2em;
+  text-shadow: 0 2px rgba(0, 0, 0, 0.2);
 }
 
 .examples {

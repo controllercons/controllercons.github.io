@@ -1,59 +1,95 @@
-.nes {
-	background-color: $nes-hex;
+.atari2600 {
+	background-color: $atari2600-hex;
 }
-.snes {
-	background-color: $snes-hex;
+
+.dreamcast {
+	background-color: $dreamcast-hex;
 }
+
+.gamecube {
+	background-color: $gamecube-hex;
+}
+
+.joyconl {
+	background-color: $joyconl-hex;
+}
+
+.joyconr {
+	background-color: $joyconr-hex;
+}
+
+.mastersystem {
+	background-color: $mastersystem-hex;
+}
+
 .megadrive {
 	background-color: $megadrive-hex;
-	color: $light;
 }
+
 .n64 {
 	background-color: $n64-hex;
 }
+
+.nes {
+	background-color: $nes-hex;
+}
+
 .psx {
 	background-color: $psx-hex;
 }
-.gamecube {
-	background-color: $gamecube-hex;
-	color: $light;
-}
+
 .ps2 {
 	background-color: $ps2-hex;
-	color: $light;
 }
-.xbox {
-	background-color: $xbox-hex;
-	color: $light;
-}
+
 .ps3 {
 	background-color: $ps3-hex;
-	color: $light;
 }
-.xbox-360 {
-	background-color: $xbox-360-hex;
+
+.ps4 {
+	background-color: $ps4-hex;
 }
-.wii-remote {
-	background-color: $wii-remote-hex;
+
+.snes {
+	background-color: $snes-hex;
 }
+
+.switchpro {
+	background-color: $switchpro-hex;
+}
+
+.virtualboy {
+	background-color: $virtualboy-hex;
+}
+
+.wii {
+	background-color: $wii-hex;
+}
+
+.wiiclassic {
+	background-color: $wiiclassic-hex;
+}
+
 .wiiu {
 	background-color: $wiiu-hex;
 }
-.ps4 {
-	background-color: $ps4-hex;
-	color: $light;
+
+.wiiupro {
+	background-color: $wiiupro-hex;
 }
+
+.xbox {
+	background-color: $xbox-hex;
+}
+
+.xboxs {
+	background-color: $xboxs-hex;
+}
+
+.xbox-360 {
+	background-color: $xbox-360-hex;
+}
+
 .xbox-one {
 	background-color: $xbox-one-hex;
-	color: $light;
-}
-.switch {
-	background-color: $switch-hex;
-	color: $light;
-}
-.switch-joycon-l {
-	background-color: $switch-l-hex;
-}
-.switch-joycon-r {
-	background-color: $switch-r-hex;
 }

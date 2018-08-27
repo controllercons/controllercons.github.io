@@ -1,151 +1,215 @@
 @font-face {
-  font-family: "Controllercons";
-  src: url("../font/controllercons.woff2?v=1.0.0") format("woff2"),
-       url("../font/controllercons.woff?v=1.0.0") format("woff");
-  font-weight: normal;
-  font-style: normal;
+	font-family: "Controllercons";
+	src: url("../font/controllercons.woff2?v=1.0.0") format("woff2"), url("../font/controllercons.woff?v=1.0.0") format("woff");
+	font-weight: normal;
+	font-style: normal;
 }
-
 .cc:before {
-  display: inline-block;
-  font: normal normal normal 16px/1 Controllercons;
-  font-size: inherit;
-  speak: none;
-  text-decoration: inherit;
+	display: inline-block;
+	font: normal normal normal 16px/1 Controllercons;
+	font-size: inherit;
+	speak: none;
+	text-decoration: inherit;
 }
-
+/* '\cc000' */
 .cc-nes:before {
-  content: "\cc000";
+	content: '󌀀';
 }
-
+/* '\cc001' */
 .cc-nes-o:before {
-  content: "\cc001";
+	content: '󌀁';
 }
-
+/* '\cc002' */
 .cc-megadrive:before {
-  content: "\cc002";
+	content: '󌀂';
 }
-
+/* '\cc003' */
 .cc-megadrive-o:before {
-  content: "\cc003";
+	content: '󌀃';
 }
-
+/* '\cc004' */
 .cc-snes:before {
-  content: "\cc004";
+	content: '󌀄';
 }
-
+/* '\cc005' */
 .cc-snes-o:before {
-  content: "\cc005";
+	content: '󌀅';
 }
-
-.cc-ps1:before {
-  content: "\cc006";
+/* '\cc006' */
+.cc-ps1:before,
+.cc-psx:before {
+	content: '󌀆';
 }
-
-.cc-ps1-o:before {
-  content: "\cc007";
+/* '\cc007' */
+.cc-ps1-o:before,
+.cc-psx-o:before {
+	content: '󌀇';
 }
-
+/* '\cc008' */
 .cc-n64:before {
-  content: "\cc008";
+	content: '󌀈';
 }
-
+/* '\cc009' */
 .cc-n64-o:before {
-  content: "\cc009";
+	content: '󌀉';
 }
-
+/* '\cc010' */
 .cc-ps2:before {
-  content: "\cc010";
+	content: '󌀐';
 }
-
+/* '\cc011' */
 .cc-ps2-o:before {
-  content: "\cc011";
+	content: '󌀑';
 }
-
+/* '\cc012' */
 .cc-xbox:before {
-  content: "\cc012";
+	content: '󌀒';
 }
-
+/* '\cc013' */
 .cc-xbox-o:before {
-  content: "\cc013";
+	content: '󌀓';
 }
-
+/* '\cc014' */
 .cc-gamecube:before {
-  content: "\cc014";
+	content: '󌀔';
 }
-
+/* '\cc015' */
 .cc-gamecube-o:before {
-  content: "\cc015";
+	content: '󌀕';
 }
-
+/* '\cc016' */
 .cc-xbox360:before {
-  content: "\cc016";
+	content: '󌀖';
 }
-
+/* '\cc017' */
 .cc-xbox360-o:before {
-  content: "\cc017";
+	content: '󌀗';
 }
-
+/* '\cc018' */
 .cc-ps3:before {
-  content: "\cc018";
+	content: '󌀘';
 }
-
+/* '\cc019' */
 .cc-ps3-o:before {
-  content: "\cc019";
+	content: '󌀙';
 }
-
-.cc-wii-remote:before {
-  content: "\cc020";
+/* '\cc020' */
+.cc-wii-remote:before,
+.cc-wii:before {
+	content: '󌀠';
 }
-
-.cc-wii-remote-o:before {
-  content: "\cc021";
+/* '\cc021' */
+.cc-wii-remote-o:before,
+.cc-wii-o:before {
+	content: '󌀡';
 }
-
+/* '\cc022' */
 .cc-wiiu:before {
-  content: "\cc022";
+	content: '󌀢';
 }
-
+/* '\cc023' */
 .cc-wiiu-o:before {
-  content: "\cc023";
+	content: '󌀣';
 }
-
+/* '\cc024' */
 .cc-ps4:before {
-  content: "\cc024";
+	content: '󌀤';
 }
-
+/* '\cc025' */
 .cc-ps4-o:before {
-  content: "\cc025";
+	content: '󌀥';
 }
-
+/* '\cc026' */
 .cc-xboxone:before {
-  content: "\cc026";
+	content: '󌀦';
 }
-
+/* '\cc027' */
 .cc-xboxone-o:before {
-  content: "\cc027";
+	content: '󌀧';
 }
-
-.cc-switch-joycon-l:before {
-  content: "\cc028";
+/* '\cc028' */
+.cc-switch-joycon-l:before,
+.cc-joyconl:before {
+	content: '󌀨';
 }
-
-.cc-switch-joycon-l-o:before {
-  content: "\cc029";
+/* '\cc029' */
+.cc-switch-joycon-l-o:before,
+.cc-joyconl-o:before {
+	content: '󌀩';
 }
-
-.cc-switch-joycon-r:before {
-  content: "\cc030";
+/* '\cc030' */
+.cc-switch-joycon-r:before,
+.cc-joyconr:before {
+	content: '󌀰';
 }
-
-.cc-switch-joycon-r-o:before {
-  content: "\cc031";
+/* '\cc031' */
+.cc-switch-joycon-r-o:before,
+.cc-joyconr-o:before {
+	content: '󌀱';
 }
-
-.cc-switch:before {
-  content: "\cc032";
+/* '\cc100' */
+.cc-atari2600:before {
+	content: '󌄀';
 }
-
-.cc-switch-o:before {
-  content: "\cc033";
+/* '\cc101' */
+.cc-atari2600-o:before {
+	content: '󌄁';
+}
+/* '\cc102' */
+.cc-mastersystem:before {
+	content: '󌄂';
+}
+/* '\cc103' */
+.cc-mastersystem-o:before {
+	content: '󌄃';
+}
+/* '\cc104' */
+.cc-virtualboy:before {
+	content: '󌄄';
+}
+/* '\cc105' */
+.cc-virtualboy-o:before {
+	content: '󌄅';
+}
+/* '\cc106' */
+.cc-dreamcast:before {
+	content: '󌄆';
+}
+/* '\cc107' */
+.cc-dreamcast-o:before {
+	content: '󌄇';
+}
+/* '\cc108' */
+.cc-xboxs:before {
+	content: '󌄈';
+}
+/* '\cc109' */
+.cc-xboxs-o:before {
+	content: '󌄉';
+}
+/* '\cc110' */
+.cc-wiiclassic:before {
+	content: '󌄐';
+}
+/* '\cc111' */
+.cc-wiiclassic-o:before {
+	content: '󌄑';
+}
+/* '\cc112' */
+.cc-wiiupro:before {
+	content: '󌄒';
+}
+/* '\cc113' */
+.cc-wiiupro-o:before {
+	content: '󌄓';
+}
+/* '\cc114' */
+.cc-switch:before,
+.cc-switchpro:before {
+	content: '󌄔';
+}
+/* '\cc115' */
+.cc-switch-o:before,
+.cc-switchpro-o:before {
+	content: '󌄕';
 }

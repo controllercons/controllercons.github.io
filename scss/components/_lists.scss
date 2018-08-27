@@ -7,7 +7,7 @@
 	&.light {
 		
 		li {
-			border-bottom-color: rgba($light, 0.1);
+			border-bottom-color: rgba($light, 0.33);
 		}
 	}
 	
@@ -23,7 +23,7 @@
 	}
 	
 	li {
-		border-bottom: 2px solid rgba($dark, 0.1);
+		border-bottom: 2px solid darken($main, 15%);
 		display: block;
 		margin-bottom: 0.5em;
 		padding-bottom: 0.5em;
@@ -41,13 +41,27 @@
 		margin-bottom: -0.5em;
 		margin-top: 0.5em;
 		padding: 0.75em;
+
+		code {
+			color: $accent;
+		}
 		
 		.twitter-trigger {
 			color: $main;
+		}
+
+		ul {
+			margin-top: 0;
+			padding-left: 1em;
+
+			li {
+				font-size: 0.9em;
+			}
 		}
 	}
 	
 	strong {
 		font-size: 1.2em;
+		text-shadow: 0 2px rgba(0, 0, 0, 0.2);
 	}
 }

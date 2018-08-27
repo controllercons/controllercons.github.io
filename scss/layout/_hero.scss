@@ -1,6 +1,6 @@
 #hero {
-	background: $dark url('../img/hero-background.svg');
-	background: url('../img/hero-background.svg'), linear-gradient($dark, darken($dark, 3.5%));
+	background: $main url('../img/hero-background.svg');
+	background: url('../img/hero-background.svg'), linear-gradient($main, darken($main, 3.5%));
 	background-size: cover;
 	display: flex;
 	height: 100%;
@@ -34,5 +34,6 @@
 	color: #fff;
 	line-height: 1;
 	margin: 0;
+	text-shadow: 0 3px rgba(0, 0, 0, 0.33);
 	text-transform: uppercase;
 }

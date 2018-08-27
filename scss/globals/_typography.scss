@@ -1,18 +1,23 @@
 h1 {
 	font-size: 2.5em;
 	font-weight: 900;
+	text-transform: uppercase;
 }
 
 
 h2 {
 	color: $main;
 	font-size: 1.9em;
-	font-weight: 600;
+	font-weight: 900;
+	text-shadow: 0 2px rgba(0, 0, 0, 0.2);
+	text-transform: uppercase;
 }
 
 h3 {
 	font-size: 1.5em;
-	font-weight: 600;
+	font-weight: 900;
+	text-shadow: 0 2px rgba(0, 0, 0, 0.2);
+	text-transform: uppercase;
 }
 
 h4 {
@@ -28,4 +33,8 @@ h5 {
 .section-subtitle,
 .section-title {
 	margin-top: 0;
+}
+
+.section-title-top-margin {
+	margin-top: 1em;
 }

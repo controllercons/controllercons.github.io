@@ -133,6 +133,7 @@ nav {
 		color: $accent;
 		display: block;
 		padding: 0.5em 0.75em;
+		text-shadow: 0 3px rgba(0, 0, 0, 0.33);
 
 		&:hover {
 			color: $light;
@@ -148,6 +149,7 @@ nav {
 		
 		&.active {
 			color: $dark !important;
+			text-shadow: none;
 
 			&:hover {
 				color: $light !important;

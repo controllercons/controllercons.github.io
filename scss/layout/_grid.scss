@@ -5,8 +5,7 @@
 
 .cell {
 	align-items: center;
-	color: $dark;
-	cursor: pointer;
+	color: $light;
 	display: flex;
 	height: 9rem;
 	overflow: hidden;
@@ -23,12 +22,13 @@
 	}
 	
 	@media only screen and (min-width: $breakpoint-large) {
-		width: 20%;
+		height: 16rem;
+		width: 25%;
 	}
 	
 	@media only screen and (min-width: $breakpoint-mecha) {
-		height: 15rem;
-		width: 16.66%;	
+		height: 22rem;
+		width: 20%;
 	}
 	
 	&:focus,
@@ -37,12 +37,10 @@
 		i {
 			&[data-original] {
 				opacity: 0;
-				transform: translate(-150%, -50%);
 			}
 			
 			&[data-outlined] {
 				opacity: 1;
-				transform: translate(-50%, -50%);
 			}
 		}
 		
@@ -63,17 +61,19 @@
 		}
 				
 		@media only screen and (min-width: $breakpoint-large) {
-			font-size: 6em;
+			font-size: 12em;
 		}
 		
 		@media only screen and (min-width: $breakpoint-mecha) {
-			font-size: 8em;
+			font-size: 14em;
 		}
 		
 		&[data-outlined] {
-			//display: none;
 			opacity: 0;
-			transform: translate(-150%, -50%);
+		}
+
+		&:before {
+			text-shadow: 0 3px rgba(0, 0, 0, 0.33);
 		}
 	}
 	
