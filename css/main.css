@@ -559,7 +559,7 @@ a.twitter-trigger:focus, a.twitter-trigger:hover {
 }
 
 code {
-  color: #4e00cc;
+  color: #1ffb8f;
   word-break: break-all;
 }
 
@@ -1275,12 +1275,20 @@ nav a:focus {
 }
 
 nav a.active {
-  color: #000000 !important;
+  color: #ffffff !important;
   text-shadow: none;
 }
 
 nav a.active:hover {
-  color: #ffffff !important;
+  color: #000000 !important;
+}
+
+nav a.active.button {
+  color: #1ffb8f !important;
+}
+
+nav a.active.button:hover {
+  color: #000000 !important;
 }
 
 #hero {
