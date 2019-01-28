@@ -2,7 +2,6 @@
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -52,8 +51,7 @@ figure {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -291,8 +289,7 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -330,8 +327,7 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -455,7 +451,6 @@ a {
   color: #1ffb8f;
   text-decoration: none;
   -webkit-text-decoration-skip: objects;
-  -webkit-transition: all 0.75s ease;
   transition: all 0.75s ease;
 }
 
@@ -481,15 +476,12 @@ a.twitter-trigger:focus, a.twitter-trigger:hover {
 
 .bmc-button img {
   border-radius: 1.67px;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.75s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   transition: 0.75s ease;
 }
 
 .bmc-button img:hover, .bmc-button img:active, .bmc-button img:focus {
-  -webkit-box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.2);
   opacity: 0.85;
 }
 
@@ -498,7 +490,6 @@ a.twitter-trigger:focus, a.twitter-trigger:hover {
   display: block;
   height: 4px;
   position: relative;
-  -webkit-transition: all 0.75s ease;
   transition: all 0.75s ease;
   width: 2em;
 }
@@ -509,7 +500,6 @@ a.twitter-trigger:focus, a.twitter-trigger:hover {
   height: 4px;
   left: 0;
   position: absolute;
-  -webkit-transition: all 0.75s ease;
   transition: all 0.75s ease;
   width: 2em;
 }
@@ -891,11 +881,7 @@ h5 {
 
 @media only screen and (min-width: 45em) {
   .column-container {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    align-items: flex-start;
     display: flex;
   }
 }
@@ -906,9 +892,7 @@ h5 {
 
 @media only screen and (min-width: 45em) {
   .column {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0;
-            flex: 1 0;
+    flex: 1 0;
     margin-bottom: 0;
   }
 }
@@ -955,19 +939,13 @@ h5 {
 }
 
 #social-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-align: center;
 }
 
 .social-button {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   padding: 0 1em;
 }
 
@@ -1008,22 +986,13 @@ h5 {
 }
 
 .grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
 .cell {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 9rem;
   overflow: hidden;
@@ -1073,7 +1042,6 @@ h5 {
   opacity: 1;
   position: absolute;
   top: 50%;
-  -webkit-transition: 0.75s ease;
   transition: 0.75s ease;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1082,18 +1050,6 @@ h5 {
 @media only screen and (min-width: 45em) {
   .cell i {
     font-size: 8em;
-  }
-}
-
-@media only screen and (min-width: 62.5em) {
-  .cell i {
-    font-size: 12em;
-  }
-}
-
-@media only screen and (min-width: 120em) {
-  .cell i {
-    font-size: 14em;
   }
 }
 
@@ -1106,23 +1062,16 @@ h5 {
 }
 
 .cell .inner {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 
 header {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background-color: transparent;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 1rem;
   position: fixed;
   top: 0;
-  -webkit-transition: all 0.75s ease;
   transition: all 0.75s ease;
   width: 100%;
   z-index: 1;
@@ -1149,9 +1098,7 @@ header.filled #nav-toggle:focus .burger:before, header.filled #nav-toggle:focus 
 
 #home-link {
   display: block;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0;
-          flex: 1 0;
+  flex: 1 0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1206,9 +1153,7 @@ nav {
   nav {
     background-color: transparent;
     display: block;
-    -webkit-box-flex: 2;
-        -ms-flex: 2 0;
-            flex: 2 0;
+    flex: 2 0;
     padding: 0;
     position: static;
     text-align: right;
@@ -1293,17 +1238,12 @@ nav a.active.button:hover {
 
 #hero {
   background: #4e00cc url("../img/hero-background.svg");
-  background: url("../img/hero-background.svg"), -webkit-gradient(linear, left top, left bottom, from(#4e00cc), to(#4700ba));
   background: url("../img/hero-background.svg"), linear-gradient(#4e00cc, #4700ba);
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 100%;
   font-size: 2em;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 @media only screen and (min-width: 52.5em) {
@@ -1314,11 +1254,8 @@ nav a.active.button:hover {
 }
 
 #hero .caption {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 100%;
-          flex: 1 100%;
+  align-self: flex-end;
+  flex: 1 100%;
   font-size: 0.3em;
   max-width: 81.25rem;
   padding: 0 2rem 6rem;
@@ -1360,7 +1297,6 @@ nav a.active.button:hover {
   opacity: 0;
   position: absolute;
   text-align: right;
-  -webkit-transition: opacity 0.75s ease;
   transition: opacity 0.75s ease;
 }
 
@@ -1374,7 +1310,6 @@ nav a.active.button:hover {
   cursor: pointer;
   height: 1.2em;
   display: block;
-  -webkit-transition: all 0.75s ease;
   transition: all 0.75s ease;
   width: 1.2em;
 }
@@ -1428,7 +1363,6 @@ nav a.active.button:hover {
   position: absolute;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  -webkit-transition: opacity 0.75s ease;
   transition: opacity 0.75s ease;
 }
 
@@ -1446,100 +1380,100 @@ nav a.active.button:hover {
   width: 0;
 }
 
-.atari2600 {
-  background-color: #8f481c;
+.atari2600 i:before {
+  text-shadow: 1px 2px #8f481c;
 }
 
-.dreamcast {
-  background-color: #216ce1;
+.dreamcast i:before {
+  text-shadow: 1px 2px #216ce1;
 }
 
-.gamecube {
-  background-color: #585fc8;
+.gamecube i:before {
+  text-shadow: 1px 2px #585fc8;
 }
 
-.joyconl {
-  background-color: #00ccf0;
+.joyconl i:before {
+  text-shadow: 1px 2px #00ccf0;
 }
 
-.joyconr {
-  background-color: #ff4a3d;
+.joyconr i:before {
+  text-shadow: 1px 2px #ff4a3d;
 }
 
-.mastersystem {
-  background-color: #771516;
+.mastersystem i:before {
+  text-shadow: 1px 2px #771516;
 }
 
-.megadrive {
-  background-color: #fe2c2b;
+.megadrive i:before {
+  text-shadow: 1px 2px #fe2c2b;
 }
 
-.n64 {
-  background-color: #069330;
+.n64 i:before {
+  text-shadow: 1px 2px #069330;
 }
 
-.nes {
-  background-color: #da3835;
+.nes i:before {
+  text-shadow: 1px 2px #da3835;
 }
 
-.psx {
-  background-color: #01cfc5;
+.psx i:before {
+  text-shadow: 1px 2px #01cfc5;
 }
 
-.ps2 {
-  background-color: #fc5950;
+.ps2 i:before {
+  text-shadow: 1px 2px #fc5950;
 }
 
-.ps3 {
-  background-color: #77adeb;
+.ps3 i:before {
+  text-shadow: 1px 2px #77adeb;
 }
 
-.ps4 {
-  background-color: #f889d6;
+.ps4 i:before {
+  text-shadow: 1px 2px #f889d6;
 }
 
-.snes {
-  background-color: #edca3a;
+.snes i:before {
+  text-shadow: 1px 2px #edca3a;
 }
 
-.switchpro {
-  background-color: #434449;
+.switchpro i:before {
+  text-shadow: 1px 2px #434449;
 }
 
-.virtualboy {
-  background-color: #ac0002;
+.virtualboy i:before {
+  text-shadow: 1px 2px #ac0002;
 }
 
-.wii {
-  background-color: #ef6886;
+.wii i:before {
+  text-shadow: 1px 2px #ef6886;
 }
 
-.wiiclassic {
-  background-color: #38b3ff;
+.wiiclassic i:before {
+  text-shadow: 1px 2px #38b3ff;
 }
 
-.wiiu {
-  background-color: #5dd9ff;
+.wiiu i:before {
+  text-shadow: 1px 2px #5dd9ff;
 }
 
-.wiiupro {
-  background-color: #b4223a;
+.wiiupro i:before {
+  text-shadow: 1px 2px #b4223a;
 }
 
-.xbox {
-  background-color: #9dcf38;
+.xbox i:before {
+  text-shadow: 1px 2px #9dcf38;
 }
 
-.xboxs {
-  background-color: #9dcf38;
+.xboxs i:before {
+  text-shadow: 1px 2px #9dcf38;
 }
 
-.xbox-360 {
-  background-color: #b5d431;
+.xbox360 i:before {
+  text-shadow: 1px 2px #b5d431;
 }
 
-.xbox-one {
-  background-color: #8ac85b;
+.xboxone i:before {
+  text-shadow: 1px 2px #8ac85b;
 }
 
 .list {
@@ -1601,14 +1535,11 @@ nav a.active.button:hover {
 }
 
 .examples {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .example {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 20%;
-          flex: 0 0 20%;
+  flex: 0 0 20%;
   max-width: 20%;
   text-align: center;
 }

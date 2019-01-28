@@ -1,95 +1,215 @@
 .atari2600 {
-	background-color: $atari2600-hex;
+
+	i {
+		&:before {
+			text-shadow: 1px 2px $atari2600-hex;
+		}
+	}
 }
 
 .dreamcast {
-	background-color: $dreamcast-hex;
+
+	i {
+		&:before {
+			text-shadow: 1px 2px $dreamcast-hex;
+		}
+	}
 }
 
 .gamecube {
-	background-color: $gamecube-hex;
+
+	i {
+		&:before {
+			text-shadow: 1px 2px $gamecube-hex;
+		}
+	}
 }
 
 .joyconl {
-	background-color: $joyconl-hex;
+
+	i {
+		&:before {
+			text-shadow: 1px 2px $joyconl-hex;
+		}
+	}
 }
 
 .joyconr {
-	background-color: $joyconr-hex;
+
+	i {
+		&:before {
+			text-shadow: 1px 2px $joyconr-hex;
+		}
+	}
 }
 
 .mastersystem {
-	background-color: $mastersystem-hex;
+
+	i {
+		&:before {
+			text-shadow: 1px 2px $mastersystem-hex;
+		}
+	}
 }
 
 .megadrive {
-	background-color: $megadrive-hex;
+
+	i {
+		&:before {
+			text-shadow: 1px 2px $megadrive-hex;
+		}
+	}
 }
 
 .n64 {
-	background-color: $n64-hex;
+
+	i {
+		&:before {
+			text-shadow: 1px 2px $n64-hex;
+		}
+	}
 }
 
 .nes {
-	background-color: $nes-hex;
+
+	i {
+		&:before {
+			text-shadow: 1px 2px $nes-hex;
+		}
+	}
 }
 
 .psx {
-	background-color: $psx-hex;
+
+	i {
+		&:before {
+			text-shadow: 1px 2px $psx-hex;
+		}
+	}
 }
 
 .ps2 {
-	background-color: $ps2-hex;
+
+	i {
+		&:before {
+			text-shadow: 1px 2px $ps2-hex;
+		}
+	}
 }
 
 .ps3 {
-	background-color: $ps3-hex;
+
+	i {
+		&:before {
+			text-shadow: 1px 2px $ps3-hex;
+		}
+	}
 }
 
 .ps4 {
-	background-color: $ps4-hex;
+
+	i {
+		&:before {
+			text-shadow: 1px 2px $ps4-hex;
+		}
+	}
 }
 
 .snes {
-	background-color: $snes-hex;
+
+	i {
+		&:before {
+			text-shadow: 1px 2px $snes-hex;
+		}
+	}
 }
 
 .switchpro {
-	background-color: $switchpro-hex;
+
+	i {
+		&:before {
+			text-shadow: 1px 2px $switchpro-hex;
+		}
+	}
 }
 
 .virtualboy {
-	background-color: $virtualboy-hex;
+
+	i {
+		&:before {
+			text-shadow: 1px 2px $virtualboy-hex;
+		}
+	}
 }
 
 .wii {
-	background-color: $wii-hex;
+
+	i {
+		&:before {
+			text-shadow: 1px 2px $wii-hex;
+		}
+	}
 }
 
 .wiiclassic {
-	background-color: $wiiclassic-hex;
+
+	i {
+		&:before {
+			text-shadow: 1px 2px $wiiclassic-hex;
+		}
+	}
 }
 
 .wiiu {
-	background-color: $wiiu-hex;
+
+	i {
+		&:before {
+			text-shadow: 1px 2px $wiiu-hex;
+		}
+	}
 }
 
 .wiiupro {
-	background-color: $wiiupro-hex;
+
+	i {
+		&:before {
+			text-shadow: 1px 2px $wiiupro-hex;
+		}
+	}
 }
 
 .xbox {
-	background-color: $xbox-hex;
+
+	i {
+		&:before {
+			text-shadow: 1px 2px $xbox-hex;
+		}
+	}
 }
 
 .xboxs {
-	background-color: $xboxs-hex;
+
+	i {
+		&:before {
+			text-shadow: 1px 2px $xboxs-hex;
+		}
+	}
 }
 
-.xbox-360 {
-	background-color: $xbox-360-hex;
+.xbox360 {
+
+	i {
+		&:before {
+			text-shadow: 1px 2px $xbox360-hex;
+		}
+	}
 }
 
-.xbox-one {
-	background-color: $xbox-one-hex;
+.xboxone {
+
+	i {
+		&:before {
+			text-shadow: 1px 2px $xboxone-hex;
+		}
+	}
 }
