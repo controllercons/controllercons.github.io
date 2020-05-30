@@ -1,0 +1,75 @@
+.grid {
+	display: grid;
+
+	&--controllercons {
+		--grid-cell-count: 2;
+		column-gap: 1.25em;
+		grid-template: 1fr / 1fr 1fr;
+		padding-left: 1.25em;
+		padding-right: 1.25em;
+		row-gap: 1.25em;
+
+		@include media($breakpoint-md) {
+			--grid-cell-count: 3;
+			grid-template: 1fr / 1fr 1fr 1fr;
+			padding-left: var(--spacing-lg);
+			padding-right: var(--spacing-lg);
+		}
+
+		@include media($breakpoint-lg) {
+			column-gap: var(--spacing-md);
+			--grid-cell-count: 4;
+			grid-template: 1fr / 1fr 1fr 1fr 1fr;
+			padding-left: var(--spacing-md);
+			padding-right: calc(var(--spacing-lg) + var(--spacing-md));
+			row-gap: var(--spacing-md);
+		}
+
+		@include media($breakpoint-xxl) {
+			--grid-cell-count: 6;
+			grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr 1fr;
+		}	
+
+		figure {
+			align-items: center;
+			cursor: pointer;
+			display: flex;
+			justify-content: center;
+			transition: $transition;
+
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+
+		i {
+			// Viewport width - grid gap size * number of grid cells (+ 2 for grid padding)
+			// divided by the number of grid cells - grid padding size (* 2 for left and right)
+			font-size: calc(((100vw - (var(--spacing-lg) * (var(--grid-cell-count) + 2))) / var(--grid-cell-count)) - (var(--spacing-md) * 2));	
+		}
+	}
+
+	&--three-columns {
+		grid-template-rows: 1fr 1fr 1fr;
+		row-gap: var(--spacing-md);
+
+		@include media($breakpoint-md) {
+			column-gap: var(--spacing-md);
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: none;
+			row-gap: 0;
+		}
+	}
+
+	&--two-columns {
+		row-gap: var(--spacing-md);
+		grid-template-rows: 1fr 1fr;
+
+		@include media($breakpoint-md) {
+			column-gap: var(--spacing-md);
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: none;
+			row-gap: 0;
+		}
+	}
+}

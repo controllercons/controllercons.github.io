@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'controllercons-solid';
+	src: url('../font/controllercons-solid.woff2') format('woff2'),
+		  url('../font/controllercons-solid.woff') format('woff');
+	font-style: normal;
+	font-weight: normal;
+}
+
+.ccs::before {
+	font-family: 'controllercons-solid';
+}

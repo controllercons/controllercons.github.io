@@ -1,0 +1,25 @@
+// Colours
+$primary:   #40434e; // #333745;
+$secondary: #80e0df;
+$tertiary:  #fff;
+$action:    #aef78e;
+
+// Font
+$main-stack: 'Nunito', sans-serif;
+$code-stack: 'Source Code Pro', monospace;
+$size-xl: 5.333em;
+$size-lg: 1.556em;
+$size-md: 1.222em;
+$size-sm: 0.889em;
+$size-xs: 0.778em;
+
+// Breakpoints
+$breakpoint-sm: 520px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+// Misc
+$focus-outline: 1px dashed var(--colour-secondary);
+$transition: 0.4s ease-in-out;

@@ -1,0 +1,59 @@
+html {
+	color: #40434e;
+	font: 400 16px/1.6 "Helvetica Neue", Helvetica, Arial, sans-serif;
+	height: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-align: center;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 74rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+#footer,
+#header {
+	padding-bottom: 2rem;
+	padding-top: 2rem;
+}
+
+.icons {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.icons li {
+	display: inline-block;
+	padding: 1em;
+	width: 10em;
+}
+
+.icons li span {
+	display: block;
+}
+
+.icons li .unicode-character {
+	font-size: 1.5em;
+}
+
+.icons--solid .unicode-character {
+	font-family: 'controllercons-solid';
+}
+
+.icons--outline .unicode-character {
+	font-family: 'controllercons-outline';
+}
+
+.icons--duotone .unicode-character {
+	font-family: 'controllercons-duotone';
+}
+
+#logo {
+	max-width: 5em;
+}

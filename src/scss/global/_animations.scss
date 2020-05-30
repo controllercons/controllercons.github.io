@@ -1,0 +1,17 @@
+@keyframes slideInRight {
+	0% {
+		transform: translate(-100%, 100%);
+	}
+	100% {
+		transform: translate(0, 0) rotate(-15deg);
+	}
+}
+
+@keyframes slideInLeft {
+	0% {
+		transform: translate(100%, 100%);
+	}
+	100% {
+		transform: translate(0, 0) rotate(15deg);
+	}
+}

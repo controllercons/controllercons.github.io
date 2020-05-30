@@ -1,0 +1,18 @@
+.padding {
+
+	&-sm {
+		padding: var(--spacing-sm);
+	}
+
+	&-md {
+		padding: var(--spacing-md);
+	}
+
+	&-y {
+
+		&-lg {
+			padding-bottom: var(--spacing-lg);
+			padding-top: var(--spacing-lg);
+		}
+	}
+}

@@ -1,0 +1,37 @@
+.font {
+
+	&-family {
+
+		&-code {
+			font-family: $code-stack;
+		}
+	}
+
+	&-size {
+
+		&-xl {
+			font-size: $size-xl;
+		}
+	
+		&-lg {
+			font-size: $size-lg;
+		}
+	
+		&-md {
+			font-size: $size-md;
+		}
+	
+		&-sm {
+			font-size: $size-sm;
+		}
+	
+		&-xs {
+			font-size: $size-xs;
+		}
+	}
+
+	&-smoothing {
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+	}
+}

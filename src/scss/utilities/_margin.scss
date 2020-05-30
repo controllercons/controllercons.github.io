@@ -1,0 +1,37 @@
+.margin {
+
+	&-auto {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&-bottom {
+
+		&-1 {
+			margin-bottom: 1em;
+		}
+
+		&-md {
+			margin-bottom: var(--spacing-md);
+		}
+
+		&-lg {
+			margin-bottom: var(--spacing-lg);
+		}
+	}
+
+	&-none {
+		margin: 0;
+	}
+
+	&-top {
+
+		&-lg {
+			margin-top: var(--spacing-lg);
+		}
+
+		&-none {
+			margin-top: 0;
+		}
+	}
+}

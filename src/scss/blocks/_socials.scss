@@ -1,0 +1,15 @@
+.socials {
+	display: flex;
+	justify-content: center;
+
+	&__button {
+
+		&:first-child {
+			margin-right: 0.5em;
+		}
+
+		&:last-child {
+			margin-left: 0.5em;
+		}
+	}
+}
