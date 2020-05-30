@@ -213,8 +213,8 @@
 				'unicode'  : 'cc029',
 				'hex'      : '#000000|#98c300|#ffa900|#eb1112|#789530|#006fd2|#cacaca',
 			},
-			'xbox-controller-s': {
-				'className': 'cc-xbox-controller-s',
+			'xbox-s': {
+				'className': 'cc-xbox-s',
 				'glyph'    : '󌀦|󌄦',
 				'name'     : 'Microsoft Xbox (Controller S)',
 				'year'     : '2002',
@@ -281,7 +281,7 @@
 			$('#modal-unicode').text(controllercon.unicode);
 			$('#modal-html').text('<span class="' + currentStyle + ' ' + controllercon.className + '"></span>');
 
-			$('#modal-svg-link').attr('href', '/webfont/svg/' + svgPath + '/' + controllercon.className.replace('cc-', '') + '.svg');
+			$('#modal-svg-link').attr('href', '/webkit/svg/' + svgPath + '/' + controllercon.className.replace('cc-', '') + '.svg');
 
 			$.each(hex, function(index, value) {
 				let style = value == '#ffffff' ? 'border:2px solid var(--colour-primary)' : 'background-color:' + value;

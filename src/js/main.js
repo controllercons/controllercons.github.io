@@ -281,7 +281,7 @@
 			$('#modal-unicode').text(controllercon.unicode);
 			$('#modal-html').text('<span class="' + currentStyle + ' ' + controllercon.className + '"></span>');
 
-			$('#modal-svg-link').attr('href', '/webfont/svg/' + svgPath + '/' + controllercon.className.replace('cc-', '') + '.svg');
+			$('#modal-svg-link').attr('href', '/webkit/svg/' + svgPath + '/' + controllercon.className.replace('cc-', '') + '.svg');
 
 			$.each(hex, function(index, value) {
 				let style = value == '#ffffff' ? 'border:2px solid var(--colour-primary)' : 'background-color:' + value;
