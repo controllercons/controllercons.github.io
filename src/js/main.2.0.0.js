@@ -378,13 +378,14 @@
 		onScroll();
 	});
 	
-	function onScroll(event) {
+	function onScroll() {
 
 		let scrollPosition = $(document).scrollTop();
 		const $header      = $('#site-header');
 		const $content     = $('#main-content');
 		
-		if ( $content.offset().top < ( $header.offset().top + $header.outerHeight() ) ) {
+		// if ( $content.offset().top < ( $header.offset().top + $header.outerHeight() ) ) {
+		if ( scrollPosition > 0 ) {
 			$header.addClass('background-gradient');
 		} else {
 			$header.removeClass('background-gradient');

@@ -3,5 +3,6 @@
 	&-sticky {
 		position: sticky;
 		top: calc(5em + var(--spacing-md));
+		z-index: 2;
 	}
 }
