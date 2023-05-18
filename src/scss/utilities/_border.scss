@@ -1,9 +1,6 @@
-.border {
+@include utility(border) {
 
-	&-radius {
-
-		&-sm {
-			// border-radius: 1em;
-		}
+	&--radius {
+		border-radius: 1.111em;
 	}
 }

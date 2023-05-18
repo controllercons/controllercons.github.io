@@ -1,193 +1,123 @@
 .modal {
-	background: var(--colour-tertiary);
-	box-shadow: 0 0 0.625em rgba(#000, 0.1);
-	box-sizing: border-box;
-	display: none;
-	flex-wrap: wrap;
-	left: 1.25em;
+	left: 50%;
+	max-width: 43rem;
+	opacity: 0;
 	position: fixed;
-	right: 1.25em;
 	top: 50%;
-	transform: translateY(-50%);
-	width: auto;
+	transform: translate(-50%, -50%) scale(0);
+	transition-property: opacity, transform;
+	transition-timing-function: cubic-bezier(0,1.15,1,1.13);
+	transition-duration: 0.7s;
+	width: 100%;
 	z-index: 3;
 
-	@include media($breakpoint-md) {
-		left: 50%;
-		right: auto;
-		transform: translate(-50%, -50%);
-		width: 100%;
+	&--open {
+		opacity: 1;
+		transform: translate(-50%, -50%) scale(1);
 	}
 
-	figure {
-		align-items: center;
+	&__actions {
 		display: flex;
-		justify-content: center;
-		margin-bottom: 1.25em;
+		flex-wrap: wrap;
+		gap: $spacing-md;
 
-		@include media($breakpoint-md) {
-			margin-bottom: 0;
+		li {
+
+			&:nth-child(3) {
+				flex: 1 1 100%;
+
+				.button {
+					padding-bottom: 1.33em;
+					padding-top: 1.33em;
+					width: 100%;
+
+					strong {
+						display: block;
+						margin-bottom: 0.2em;
+					}
+				}
+			}
 		}
-	}
+		
+		.button {
 
-	&__background {
-		background: var(--colour-secondary);
-		display: none;
-		height: 100%;
-		left: 0;
-		opacity: 0.9;
-		position: fixed;
-		top: 0;
-		width: 100%;
-		z-index: 2;
-	}
-
-	&__button {
-
-		&--close {
-
-			span {
-				font-size: $size-lg;
+			& + .button {
+				margin-left: $spacing-md;
 			}
 		}
 	}
 
-	&__content,
-	&__header {
-		flex: 0 0 100%;
-		width: calc(100% - 2.75em);
+	&__close {
+		box-shadow: none !important;
+		height: 1.222rem;
+		padding: 0;
+		position: absolute;
+		right: 0.556rem;
+		text-align: center;
+		top: 0.556rem;
+		width: 1.222rem;
 
-		@include media($breakpoint-md) {
-			width: 100%;
+		svg {
+			margin-left: auto;
+			margin-right: auto;
+			width: 0.5em;
 		}
 	}
 
 	&__content {
-		column-gap: var(--spacing-md);
-		display: grid;
-		max-height: 65vh;
-		overflow-y: scroll;
-
-		@include media($breakpoint-md) {
-			grid-template: 1fr / 35% 1fr;
-		}
-
-		& > div {
-
-			@include media($breakpoint-md) {
-				padding-right: 6em; // Toolbar width
-			}
-		}
-	}
-
-	&__header {
-		margin-bottom: var(--spacing-md);
-	}
-
-	&__list {
-		display: flex;
-		flex-wrap: wrap;
-
-		li {
-
-			&:not(:last-child) {
-				margin-bottom: var(--spacing-md);
-			}
-		}
-
-		&:not(.list--hex) {
-
-			li {
-				position: relative;
-	
-				&:first-child {
-					margin-right: var(--spacing-lg);
-				}
-	
-				&:nth-child(n+3) {
-					flex: 0 0 100%;
-				}
-			}
-		}
-
-		&.list--hex {
-
-			li {
-				margin-right: var(--spacing-lg);
-			}
-		}
-
-		.ccd-only {
-			margin-left: 1em;	
-		}
-	}
-
-	&__meta {
-		font-size: $size-sm;
-		opacity: 0.35;
-	}
-
-	&__toolbar {
-		// align-items: flex-start;
-		border-bottom-left-radius: 0;
-		border-bottom-right-radius: 1em;
-		border-top-left-radius: 0;
-		border-top-right-radius: 1em;
 		display: flex;
 		flex-direction: column;
-		flex-wrap: wrap;
-		height: 100%;
-		position: absolute;
-		right: 0;
-		top: 0;
-
-		.toolbar {
-
-			&__button {
-				height: 25%;
-
-				&:first-child {
-					border-top-left-radius: 0;
-					border-top-right-radius: 1em;
-				}
+		row-gap: $spacing-md;
 		
-				&:last-child {
-					border-bottom-left-radius: 0;
-					border-bottom-right-radius: 1em;
-				}
+		@include media(">=37.5rem") {
+			align-items: center;
+			column-gap: $spacing-lg;
+			display: grid;
+			grid-template-columns: 14em 1fr;
+		}
+
+		.controllercon {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 10em;
+		}
+	}
+
+	&__overlay {
+		@include transition("filter");
+
+		&::before {
+			background-color: var(--primary-color);
+			content: "";
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			@include transition("opacity");
+			width: 100%;
+			z-index: 2;
+		}
+
+		&:not(.modal__overlay--active) {
+
+			&::before {
+				pointer-events: none;
+			}
+		}
+
+		&--active {
+			filter: blur(1em);
+
+			&::before {
+				opacity: 0.1;
 			}
 		}
 	}
 
 	&__title {
-		color: var(--colour-secondary);
-		margin: 0 0 0.25em;
-	}
-}
-
-#modal-glyph {
-
-	&.ccd {
-		font-family: 'controllercons-duotone';
-	}
-
-	&.cco {
-		font-family: 'controllercons-outline';
-	}
-
-	&.ccs {
-		font-family: 'controllercons-solid';
-	}
-}
-
-#modal-glyph-after {
-	font-family: 'controllercons-duotone';
-}
-
-#modal-icon {
-	font-size: 5em;
-
-	@include media($breakpoint-md) {
-		font-size: 14em;
+		line-height: 1;
+		margin-bottom: 1em;
 	}
 }

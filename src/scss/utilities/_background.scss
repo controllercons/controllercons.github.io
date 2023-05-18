@@ -1,19 +1,9 @@
-.background {
+@include utility(background) {
 
-	&-action {
-		background-color: var(--colour-action);
-	}
+	&-color {
 
-	&-gradient {
-		background: linear-gradient(var(--colour-action), var(--colour-secondary));
-	}
-
-	&-primary {
-		background-color: var(--colour-primary);
-		color: var(--colour-tertiary);
-
-		&-tint {
-			// background-color: var(--colour-primary-tint);
+		&--tint {
+			background-color: var(--tint-color);
 		}
 	}
 }

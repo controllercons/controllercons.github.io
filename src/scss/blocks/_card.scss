@@ -1,0 +1,36 @@
+.card {
+	background-color: var(--secondary-color);
+	border-radius: 1.111em;
+	padding: 1.778em;
+
+	&:not(.card--tint) {
+		@include box-shadow();
+	}
+
+	&--tint {
+		background-color: var(--tint-color);
+	}
+
+	svg {
+		display: block;
+		fill: var(--primary-color);
+		overflow: visible;
+	}
+}
+
+button {
+
+	&.card {
+		appearance: none;
+		border: 0;
+		color: var(--primary-color);
+		cursor: pointer;
+		@include transition("transform, box-shadow");
+
+		&:focus,
+		&:hover {
+			@include box-shadow(large);
+			transform: scale(1.05);
+		}
+	}
+}

@@ -1,0 +1,24 @@
+// Breakpoints
+$breakpoints: (
+  'md': 768px,
+  'lg': 1200px,
+  'xl': 1440px
+);
+
+// Colours
+$accent:    #4A1FFF;
+$dark:      #130840;
+$tint:      #F5F5F7;
+$tint-dark: #A29DB3;
+
+// Spacing
+$spacing-md: 1rem;
+$spacing-lg: 1.778rem;
+
+// Typography
+$main-stack: 'Figtree', sans-serif;
+$code-stack: 'Martian Mono', monospace;
+
+// Misc
+$transition-duration: 0.33s;
+$transition-timing: ease-in-out;

@@ -1,0 +1,10 @@
+@include utility(color) {
+
+	&--accent {
+		color: var(--accent-color);
+	}
+
+	&--tint-dark {
+		color: var(--tint-dark-color);
+	}
+}

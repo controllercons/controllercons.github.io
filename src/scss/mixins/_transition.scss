@@ -1,0 +1,7 @@
+@mixin transition($property: null) {
+	transition: all $transition-duration $transition-timing;
+
+	@if ($property) {
+		transition-property: unquote($property);
+	}
+}

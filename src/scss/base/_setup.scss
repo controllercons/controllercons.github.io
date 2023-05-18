@@ -1,0 +1,153 @@
+:root {
+	--app-height: 100vh;
+	--primary-color: #{$dark};
+	--secondary-color: #fff;
+	--tint-color: #{$tint};
+	--tint-dark-color: #{$tint-dark};
+	--accent-color: #{$accent};
+
+	@media (prefers-color-scheme: dark) {
+		--primary-color: #fff;
+		--secondary-color: #202c39;
+		--tint-color: #283845;
+		--tint-dark-color: #829191;
+		--accent-color: #17e481;
+		// --accent-color: #ceff1a;
+	}
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	scroll-behavior: smooth;
+
+	@include media(">=23.75rem") {
+		font-size: 18px;
+	}
+
+	@include media(">=66rem") {
+		font-size: 20px;
+	}
+
+	@include media(">=100rem") {
+		font-size: 22px;
+	}
+
+	@include media(">=120rem") {
+		font-size: 24px;
+	}
+}
+
+body {
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+	font-family: $main-stack;
+	letter-spacing: 0.01ch;
+	line-height: 1.44;
+	text-rendering: optimizeSpeed;
+
+	&.duotone {
+
+		.controllercon--duotone {
+			opacity: 1;
+		}
+	}
+
+	&.outline {
+
+		.controllercon--outline {
+			opacity: 1;
+		}
+	}
+
+	&.solid {
+
+		.controllercon--solid {
+			opacity: 1;
+		}
+	}
+
+	&:not(.duotone) {
+
+		.duotone-only {
+			display: none;
+		}
+	}
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+a {
+
+	&:not([class]) {
+		color: var(--accent-color);
+		text-decoration: none;
+		@include transition(color);
+
+		&:focus,
+		&:hover {
+			color: var(--primary-color);
+		}
+	}
+}
+
+img,
+picture {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+code {
+	font-family: $code-stack;
+	font-size: 0.7em;
+}
+
+pre {
+	overflow-x: auto;
+
+	&.card--tint {
+		padding: 1em;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+	
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+.fa-secondary {
+	opacity: 1;
+}

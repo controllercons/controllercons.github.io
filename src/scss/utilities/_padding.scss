@@ -1,18 +1,26 @@
-.padding {
+@include utility(padding) {
 
-	&-sm {
-		padding: var(--spacing-sm);
+	&--lg {
+		padding: $spacing-lg;
 	}
 
-	&-md {
-		padding: var(--spacing-md);
+	&-bottom {
+
+		&--xl {
+			padding-bottom: 4.6rem;
+		}
 	}
 
 	&-y {
 
-		&-lg {
-			padding-bottom: var(--spacing-lg);
-			padding-top: var(--spacing-lg);
+		&--xxl {
+			padding-bottom: 7rem;
+			padding-top: 7rem;
+		}
+
+		&--xl {
+			padding-bottom: 4.6rem;
+			padding-top: 4.6rem;
 		}
 	}
 }

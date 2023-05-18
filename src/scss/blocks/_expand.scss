@@ -1,0 +1,35 @@
+.expand {
+	height: 50vh;
+	overflow-y: hidden;
+	position: relative;
+	@include transition("height");
+
+	&:not(.expand--open) {
+
+		&::after {
+			background: linear-gradient(180deg, rgba(#000, 0) 0%, var(--secondary-color) 100%);
+			bottom: 0;
+			content: "";
+			height: 50%;
+			left: 0;
+			position: absolute;
+			width: 100%;
+		}
+	}
+
+	&--open {
+		height: auto;
+
+		button {
+			display: none;
+		}
+	}
+
+	.button {
+		bottom: 0.5em;
+		left: 50%;
+		position: absolute;
+		transform: translateX(-50%);
+		z-index: 1;
+	}
+}

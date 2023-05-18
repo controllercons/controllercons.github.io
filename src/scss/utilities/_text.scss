@@ -1,8 +1,8 @@
-.text {
+@include utility(text) {
 
 	&-align {
-
-		&-center {
+		
+		&--center {
 			text-align: center;
 		}
 	}

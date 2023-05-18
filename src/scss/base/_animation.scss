@@ -1,0 +1,23 @@
+.js {
+
+	[data-scroll-animation] {
+		opacity: 0;
+		transition-property: opacity, transform;
+		transition-timing-function: cubic-bezier(.45, 2.05 , 0.25 ,0.5);
+		transition-duration: 0.7s;
+		transform: translateY(-2rem);
+
+		&.animate {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	[data-scroll-animation-delay="1x"] {
+		transition-delay: 0.2s;
+	}
+
+	[data-scroll-animation-delay="2x"] {
+		transition-delay: 0.4s;
+	}
+}

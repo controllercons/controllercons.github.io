@@ -1,0 +1,15 @@
+@mixin box-shadow($size: default) {
+	@if ($size == default) {
+		box-shadow: 0 0.167em 0.556em rgba($dark, 0.16);
+	} @else if ($size == large) {
+		box-shadow: 0 0.278em 0.833em rgba($dark, 0.10);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		@if ($size == default) {
+			box-shadow: 0 0.167em 0.556em rgba($dark, 0.76);
+		} @else if ($size == large) {
+			box-shadow: 0 0.278em 0.833em rgba($dark, 0.76);
+		}
+	}
+}

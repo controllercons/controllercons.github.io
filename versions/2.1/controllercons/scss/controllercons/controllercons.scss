@@ -1,0 +1,73 @@
+@use "sass:list";
+@use "sass:map";
+
+@import "config";
+
+:root {
+	--cc-primary-color: #{$primary-color};
+	--cc-primary-opacity: #{$primary-opacity};
+	--cc-secondary-color: #{$secondary-color};
+	--cc-secondary-opacity: #{$secondary-opacity};
+}
+
+%cc {
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 1;
+	text-rendering: auto;
+
+	&::before {
+		color: var(--cc-primary-color);
+		opacity: var(--cc-primary-opacity);
+	}
+}
+
+@each $style in $styles {
+	@font-face {
+		font-family: map.get($font-families, $style);
+		src: url('#{$font-path}#{map.get($font-families, $style)}.woff2') format('woff2'),
+			  url('#{$font-path}#{map.get($font-families, $style)}.woff') format('woff');
+		font-style: normal;
+		font-weight: normal;
+	}
+
+	.#{map.get($classes, $style)} {
+		@extend %cc;
+		font-family: map.get($font-families, $style);
+	}
+
+	@if $style == 'duotone' {
+		.#{map.get($classes, $style)} {
+			position: relative;
+
+			&::before {
+				bottom: 0;
+				position: absolute;
+			}
+
+			&::after {
+				color: var(--cc-secondary-color);
+				opacity: var(--cc-secondary-opacity);
+				position: relative;
+				z-index: 1;
+			}
+		}
+	}
+}
+
+@each $controller, $glyph in $controllers {
+	.#{$prefix}#{$controller} {
+		&::before {
+			content: #{'"\\cc0' + $glyph + '"'};
+		}
+	}
+
+	@if list.index($styles, 'duotone') {
+		.#{map.get($classes, 'duotone')}.#{$prefix}#{$controller} {
+			&::after {
+				content: #{'"\\cc1' + $glyph + '"'};
+			}
+		}
+	}
+}

@@ -1,6 +1,3 @@
-.display {
+@include utility(display) {
 
-	&-flex {
-		// display: flex;
-	}
 }

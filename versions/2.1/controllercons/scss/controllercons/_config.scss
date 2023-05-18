@@ -1,0 +1,61 @@
+// Remove styles that are not needed
+$styles: 'solid', 'outline', 'duotone';
+
+// Change the icons colours and styles
+$primary-color: inherit;
+$primary-opacity: 1;
+$secondary-color: inherit;
+$secondary-opacity: 0.5;
+
+// Choose the path to your font files
+$font-path: '../font/';
+
+$font-families: (
+	'solid': 'controllercons-solid',
+	'outline': 'controllercons-outline',
+	'duotone': 'controllercons-duotone'
+);
+
+// Adjust the style classes 
+$classes: (
+	'solid': 'ccs',
+	'outline': 'cco',
+	'duotone': 'ccd'
+);
+
+// Change the prefix for the controller classes
+$prefix: 'cc-';
+
+// Comment out the controllers you don't need
+$controllers: (
+	'atari-2600': '00',
+	'atari-jaguar': '01',
+	'dreamcast': '02',
+	'gamecube': '03',
+	'joy-con-l': '04',
+	'joy-con-r': '05',
+	'joy-cons': '06',
+	'master-system': '07',
+	'mega-drive': '08',
+	'n64': '09',
+	'nes': '10',
+	'ps1': '11',
+	'ps2': '12',
+	'ps3': '13',
+	'ps4': '14',
+	'ps5': '15',
+	'sega-saturn': '16',
+	'snes': '17',
+	'stadia': '18',
+	'switch-pro': '19',
+	'virtual-boy': '20',
+	'wii-classic': '21',
+	'wii-u-pro': '22',
+	'wii-u': '23',
+	'wii': '24',
+	'xbox-360': '25',
+	'xbox-s': '26',
+	'xbox-one': '27',
+	'xbox-series-x': '28',
+	'xbox': '29',
+);

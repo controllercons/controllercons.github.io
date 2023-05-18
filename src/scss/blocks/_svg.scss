@@ -1,0 +1,129 @@
+.svg-stage {
+	border-radius: 1.111em;
+	overflow: hidden;
+	position: relative;
+
+	&.animate {
+
+		.svg {
+
+			&--applications {
+				
+				.website,
+				.magazine {
+					animation-play-state: running;
+				}
+			}
+
+			&--styles,
+			&--timeline {
+
+				.controller {
+					animation-play-state: running;
+				}
+			}
+		}
+	}
+}
+
+.svg {
+
+	&--applications {
+
+		.website,
+		.magazine {
+			animation: timeline 1s cubic-bezier(.45, 2.05 , 0.25 ,0.5) 1 forwards;
+			animation-play-state: paused;
+			opacity: 0;
+			transform: translateY(-2rem);
+		}
+
+		.magazine {
+			animation-delay: 0.4s;
+
+			path {
+				fill: var(--tint-dark-color);
+
+				&:last-child {
+					fill: var(--accent-color);
+				}
+			}
+		}
+
+		.website {
+			animation-delay: 0.2s;
+
+			path {
+				fill: var(--tint-dark-color);
+			}
+
+			rect,
+			path {
+
+				&:not(:last-child) {
+					fill: var(--accent-color);
+				}
+			}
+		}
+	}
+
+	&--styles {
+
+		.controller {
+			animation: slide 1s cubic-bezier(.45, 2.05 , 0.25 ,0.5) 1 forwards;
+			animation-play-state: paused;
+			fill: var(--accent-color);
+			opacity: 0;
+			transform: translate(-2rem, 2rem);
+
+			@for $i from 1 through 3 {
+				&:nth-child(#{$i}) {
+				  animation-delay: 0.33s * $i;
+				}
+			}
+		}
+	}
+
+	&--timeline {
+
+		.controller {
+			animation: timeline 1s cubic-bezier(.45, 2.05 , 0.25 ,0.5) 1 forwards;
+			animation-play-state: paused;
+			fill: var(--accent-color);
+			opacity: 0;
+			transform: translateY(-2rem);
+
+			@for $i from 1 through 10 {
+				&:nth-child(#{$i}) {
+				  animation-delay: 0.33s * $i;
+				}
+			}
+		}
+
+		.timeline {
+			fill: var(--tint-dark-color);
+		}
+	}
+}
+
+@keyframes slide {
+	0% {
+		opacity: 0;
+		transform: translateY(-2rem, 2rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes timeline {
+	0% {
+		opacity: 0;
+		transform: translateY(-2rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

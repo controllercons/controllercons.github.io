@@ -1,0 +1,84 @@
+.hero-grid {
+	align-items: center;
+	display: grid;
+	grid-template-areas: "icon1 ... icon2 ... icon3"
+								"... caption caption caption ..."
+								"icon4 caption caption caption icon5"
+								"... caption caption caption ..."
+								"icon6 ... icon7 ... icon8";
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	height: 100%;
+	justify-content: center;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 100%;
+
+	@include media("<56.25em") {
+		
+		.hero-grid {
+
+			&__cell {
+
+				&:nth-child(n+9) {
+					display: none;
+				}
+			}
+		}
+	}
+
+	@include media(">=56.25em") {
+		grid-template-areas: "icon1 ... icon2 ... icon3 ... icon4"
+									"... icon5 caption caption caption icon6 ..."
+									"icon7 ... caption caption caption ... icon8"
+									"... icon9 ... icon10 ... icon11 ...";
+		grid-template-columns: repeat(7, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+	}
+
+	@media (orientation: portrait) {
+		grid-template-areas: "icon1 ... icon2"
+									"... icon3 ..."
+									"caption caption caption"
+									"caption caption caption"
+									"caption caption caption"
+									"... icon4 ..."
+									"icon5 ... icon6";
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(7, 1fr);
+		padding-bottom: $spacing-lg;
+		padding-top: $spacing-lg;
+
+		.hero-grid {
+
+			&__cell {
+
+				&:nth-child(n+7) {
+					display: none;
+				}
+			}
+		}
+	}
+
+	&__caption {
+		grid-area: caption;
+		padding-bottom: $spacing-lg * 2;
+		padding-top: $spacing-lg * 2;
+	}
+
+	&__cell {
+
+		@for $i from 1 through 11 {
+			&:nth-child(#{$i}) {
+			  grid-area: icon#{$i};
+			}
+		}
+	}
+
+	span {
+		color: var(--accent-color);
+		font-size: 4em;
+	}
+}

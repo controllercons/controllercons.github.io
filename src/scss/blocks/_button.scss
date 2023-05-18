@@ -1,53 +1,118 @@
-button {
-	font-family: inherit;
-	font-size: 100%;
-	line-height: 1.15;
-	margin: 0;
-	overflow: visible;
+.button {
+	background-color: var(--accent-color);
+	border-radius: 2em;
+	color: var(--secondary-color);
+	cursor: pointer;
+	display: inline-block;
+	letter-spacing: 0.035ch;
+	padding: 0.62em 1.83em;
+	text-decoration: none;
+	@include transition("background-color");
 
-	&::-moz-focus-inner {
-		border-style: none;
-		padding: 0;
+	&:not(.button--code) {
+		@include box-shadow();
+		font-weight: bold;
 	}
 
 	&:focus,
-	&:-moz-focusring {
-		outline: $focus-outline;
+	&:hover {
+		background-color: var(--primary-color);
+	}
+
+	&__icon {
+		width: 1em;
+	}
+
+	&--code {
+		background-color: var(--tint-color);
+		color: var(--primary-color);
+		font-family: $code-stack;
+		font-size: 0.667em;
+		text-align: left;
+
+		&:focus,
+		&:hover {
+			color: var(--secondary-color);
+		}
+	}
+
+	&--icon {
+		align-items: center;
+		display: flex;
+		gap: 0.5rem;
+	}
+
+	&--nav-toggle {
+		background-color: var(--secondary-color);
+		@include box-shadow();
+		color: var(--accent-color);
+		display: block;
+		height: 2.75em;
+		padding: 0;
+		position: fixed;
+		right: 1em;
+		top: 1em;
+		width: 2.75em;
+		z-index: 10;
+
+		&:focus,
+		&:hover {
+
+			.hamburger {
+
+				&::before,
+				&::after {
+					background-color: var(--secondary-color);
+				}
+			}
+		}
+
+		&.is-open {
+
+			.hamburger {
+
+				&::before {
+					transform: translate(-50%, 150%) rotate(45deg);
+				}
+
+				&::after {
+					transform: translate(-50%, -150%) rotate(-45deg);
+				}
+			}
+		}
 	}
 }
 
-.button {
-	cursor: pointer;
-	display: inline-block;
-	transition: $transition;
+button {
 
-	&--primary {
-		background-color: var(--colour-action);
-		background-image: linear-gradient(rgba($action, 0), var(--colour-secondary));
-		border-radius: 0.2em;
-		box-shadow: 0 0.15em 0 darken($secondary, 20%);
-		color: var(--colour-primary);
-		line-height: 1.6;
-		padding: 0.5em 1em 0.3em;
-		text-decoration: none;
+	&.button {
+		appearance: none;
+		border: 0;
+	}
+}
 
-		&:hover {
-			background-color: var(--colour-primary);
-			// box-shadow: 0 0.15em 0 darken($primary, 25%);
-			color: var(--colour-tertiary);
-		}
+.hamburger {
+	position: relative;
+
+	&::before,
+	&::after {
+		background-color: var(--accent-color);
+		border-radius: 0.5em;
+		content: "";
+		display: inline-block;
+		height: 0.2rem;
+		left: 50%;
+		position: absolute;
+		transform: translateX(-50%);
+		@include transition("transform, background-color");
+		width: 1.25em;
 	}
 
-	&--text {
-		-webkit-appearance: none;
-		appearance: none;
-		background: none;
-		border: 0;
-		border-radius: 0;
-		padding: 0;
+	&::before {
+		top: -0.4rem;
+	}
 
-		&:hover {
-			color: var(--colour-secondary);
-		}
+	&::after {
+		bottom: -0.4rem;
 	}
 }

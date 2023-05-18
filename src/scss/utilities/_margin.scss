@@ -1,37 +1,44 @@
-.margin {
+@include utility(margin) {
 
-	&-auto {
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	&-bottom {
-
-		&-1 {
-			margin-bottom: 1em;
+	&-b {
+		
+		&--sm {
+			margin-bottom: 0.5rem;
 		}
 
-		&-md {
-			margin-bottom: var(--spacing-md);
+		&--md {
+			margin-bottom: $spacing-md;
 		}
-
-		&-lg {
-			margin-bottom: var(--spacing-lg);
+		
+		&--lg {
+			margin-bottom: $spacing-lg;
 		}
 	}
 
-	&-none {
-		margin: 0;
-	}
+	&-t {
 
-	&-top {
-
-		&-lg {
-			margin-top: var(--spacing-lg);
+		&--sm {
+			margin-top: 0.5rem;
 		}
 
-		&-none {
-			margin-top: 0;
+		&--lg {
+			margin-top: $spacing-lg;
+		}
+	}
+
+	&-x {
+
+		&--auto {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	&-y {
+
+		&--md {
+			margin-bottom: $spacing-md;
+			margin-top: $spacing-md;
 		}
 	}
 }

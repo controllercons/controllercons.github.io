@@ -1,34 +1,50 @@
 .nav {
+	align-items: center;
+	background-color: var(--secondary-color);
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	opacity: 0;
+	position: fixed;
+	right: 0;
+	@include transition("opacity, width");
+	top: 0;
+	visibility: hidden;
+	width: 0;
+	z-index: 9;
 
-	&--main {
+	&-list {
+		text-align: center;
 
-		a {
-			color: var(--colour-tertiary);
-			font-size: 1em;
+		&__item {
+			
+			&:not(:last-child) {
+				font-size: 1.25rem;
+			}
+
+			&:last-child {
+				line-height: 1.44;
+			}
+		}
+
+		&__link {
 			text-decoration: none;
+			@include transition(color);
 
-			@include media($breakpoint-sm) {
-				font-size: $size-md;
-			}
+			&:not(.button) {
+				color: var(--accent-color);
 
-			&:hover {
-				color: var(--colour-action);
-			}
-
-			&.active {
-				color: var(--colour-tertiary) !important;
-
+				&:focus,
 				&:hover {
-					color: var(--colour-primary) !important;
+					color: var(--primary-color);
 				}
 			}
 		}
+	}
 
-		li {
-
-			&:not(:last-child) {
-				margin-right: var(--spacing-md);
-			}
-		}
+	&--open {
+		opacity: 1;
+		visibility: visible;
+		width: 100%;
 	}
 }

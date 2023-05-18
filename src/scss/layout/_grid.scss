@@ -1,75 +1,192 @@
 .grid {
 	display: grid;
+	gap: $spacing-lg;
 
-	&--controllercons {
-		--grid-cell-count: 2;
-		column-gap: 1.25em;
-		grid-template: 1fr / 1fr 1fr;
-		padding-left: 1.25em;
-		padding-right: 1.25em;
-		row-gap: 1.25em;
+	&--content {
+		grid-template-rows: auto 1fr;
 
-		@include media($breakpoint-md) {
-			--grid-cell-count: 3;
-			grid-template: 1fr / 1fr 1fr 1fr;
-			padding-left: var(--spacing-lg);
-			padding-right: var(--spacing-lg);
+		@include media(">=47.5rem") {
+			grid-template-columns: 13rem 1fr;
+			grid-template-rows: auto;
 		}
 
-		@include media($breakpoint-lg) {
-			column-gap: var(--spacing-md);
-			--grid-cell-count: 4;
-			grid-template: 1fr / 1fr 1fr 1fr 1fr;
-			padding-left: var(--spacing-md);
-			padding-right: calc(var(--spacing-lg) + var(--spacing-md));
-			row-gap: var(--spacing-md);
+		main {
+			min-width: 0;
 		}
 
-		@include media($breakpoint-xxl) {
-			--grid-cell-count: 6;
-			grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr 1fr;
-		}	
+		nav {
+			position: sticky;
+			top: $spacing-lg;
+		}
+	}
+	
+	&--demo {
+		grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
 
-		figure {
-			align-items: center;
-			cursor: pointer;
+		div {
 			display: flex;
-			justify-content: center;
-			transition: $transition;
+			gap: 0.5rem;
+			flex-direction: column;
+			padding: 1em;
+			text-align: center;
+		}
 
-			&:hover {
-				opacity: 0.7;
+		.class-name {
+			font-family: $code-stack;
+			font-size: 0.778rem;
+		}
+
+		.unicode-character {
+			font-size: 2.5rem;
+		}
+	}
+
+	&--icons {
+		grid-template-columns: repeat(2, 1fr);
+
+		[data-scroll-animation] {
+
+			&.animate {
+
+				&:nth-child(2n) {
+					transition-delay: 0.4s;
+				}
+
+				&:nth-child(2n - 1) {
+					transition-delay: 0.2s;
+				}
 			}
 		}
 
-		i {
-			// Viewport width - grid gap size * number of grid cells (+ 2 for grid padding)
-			// divided by the number of grid cells - grid padding size (* 2 for left and right)
-			font-size: calc(((100vw - (var(--spacing-lg) * (var(--grid-cell-count) + 2))) / var(--grid-cell-count)) - (var(--spacing-md) * 2));	
+		@include media(">=33.75rem") {
+			grid-template-columns: repeat(3, 1fr);
+
+			[data-scroll-animation] {
+
+				&.animate {
+
+					&:nth-child(3n) {
+						transition-delay: 0.6s;
+					}
+
+					&:nth-child(3n - 1) {
+						transition-delay: 0.4s;
+					}
+
+					&:nth-child(3n - 2) {
+						transition-delay: 0.2s;
+					}
+				}
+			}
 		}
-	}
 
-	&--three-columns {
-		grid-template-rows: 1fr 1fr 1fr;
-		row-gap: var(--spacing-md);
+		@include media(">=43.75rem") {
+			grid-template-columns: repeat(4, 1fr);
 
-		@include media($breakpoint-md) {
-			column-gap: var(--spacing-md);
-			grid-template-columns: 1fr 1fr 1fr;
-			grid-template-rows: none;
-			row-gap: 0;
+			[data-scroll-animation] {
+
+				&.animate {
+
+					&:nth-child(4n) {
+						transition-delay: 0.8s;
+					}
+
+					&:nth-child(4n - 1) {
+						transition-delay: 0.6s;
+					}
+
+					&:nth-child(4n - 2) {
+						transition-delay: 0.4s;
+					}
+
+					&:nth-child(4n - 3) {
+						transition-delay: 0.2s;
+					}
+				}
+			}
 		}
-	}
 
-	&--two-columns {
-		row-gap: var(--spacing-md);
-		grid-template-rows: 1fr 1fr;
+		@include media(">=61.25rem") {
+			grid-template-columns: repeat(5, 1fr);
 
-		@include media($breakpoint-md) {
-			column-gap: var(--spacing-md);
-			grid-template-columns: 1fr 1fr;
-			grid-template-rows: none;
-			row-gap: 0;
+			[data-scroll-animation] {
+
+				&.animate {
+
+					&:nth-child(5n) {
+						transition-delay: 1s;
+					}
+
+					&:nth-child(5n - 1) {
+						transition-delay: 0.8s;
+					}
+
+					&:nth-child(5n - 2) {
+						transition-delay: 0.6s;
+					}
+
+					&:nth-child(5n - 3) {
+						transition-delay: 0.4s;
+					}
+
+					&:nth-child(5n - 4) {
+						transition-delay: 0.2s;
+					}
+				}
+			}
+		}
+
+		@include media(">=70rem") {
+			grid-template-columns: repeat(6, 1fr);
+
+			[data-scroll-animation] {
+
+				&.animate {
+
+					&:nth-child(6n) {
+						transition-delay: 1.2s;
+					}
+
+					&:nth-child(6n - 1) {
+						transition-delay: 1s;
+					}
+
+					&:nth-child(6n - 2) {
+						transition-delay: 0.8s;
+					}
+	
+					&:nth-child(6n - 3) {
+						transition-delay: 0.6s;
+					}
+	
+					&:nth-child(6n - 4) {
+						transition-delay: 0.4s;
+					}
+	
+					&:nth-child(6n - 5) {
+						transition-delay: 0.2s;
+					}
+				}
+			}
+		}
+
+		.card {
+			position: relative;
+			width: 100%;
+		}
+
+		.controllercon {
+			opacity: 0;
+			overflow: visible;
+			transform: translate3d(0, 0, 0);
+			@include transition(opacity);
+		
+			&:not(.controllercon--solid) {
+				left: 1.778em;
+				position: absolute;
+				top: 1.778em;
+				width: calc(100% - (1.778em * 2));
+			}
 		}
 	}
 }

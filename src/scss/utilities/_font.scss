@@ -1,37 +1,28 @@
-.font {
-
-	&-family {
-
-		&-code {
-			font-family: $code-stack;
-		}
-	}
+@include utility(font) {
 
 	&-size {
 
-		&-xl {
-			font-size: $size-xl;
+		&--1 {
+			font-size: 1rem;
 		}
-	
-		&-lg {
-			font-size: $size-lg;
-		}
-	
-		&-md {
-			font-size: $size-md;
-		}
-	
-		&-sm {
-			font-size: $size-sm;
-		}
-	
-		&-xs {
-			font-size: $size-xs;
-		}
-	}
 
-	&-smoothing {
-		-moz-osx-font-smoothing: grayscale;
-		-webkit-font-smoothing: antialiased;
+		&--sm {
+			font-size: 0.778rem;
+		}
+
+		&--md {
+			font-size: 1.22rem;
+		}
+
+		&--lg {
+			font-size: 1.56rem;
+		}
+
+		&--xl {
+			font-size: 2.67rem;
+		}
 	}
 }
+
+// para md
+// letter-spacing: 0.035ch;

@@ -1,0 +1,6 @@
+@mixin utility($selector) {
+
+	.u\:#{$selector} {
+		@content;
+	}
+}
