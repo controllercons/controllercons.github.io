@@ -38,7 +38,25 @@
 		grid-template-rows: repeat(4, 1fr);
 	}
 
-	@media (orientation: portrait) {
+	@media (orientation: landscape) and (max-height: 25em) {
+
+		.hero-grid {
+
+			&__cell {
+
+				&:nth-child(2),
+				&:nth-child(7) {
+					display: none;
+				}
+			}
+		}
+
+		span {
+			font-size: 3em;
+		}
+	}
+
+	@media (orientation: portrait) and (max-height: 50em) {
 		grid-template-areas: "icon1 ... icon2"
 									"... icon3 ..."
 									"caption caption caption"

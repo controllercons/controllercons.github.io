@@ -20,7 +20,11 @@
 
 		&--xl {
 			padding-bottom: 4.6rem;
-			padding-top: 4.6rem;
+			padding-top: #{$spacing-lg * 2};
+
+			@include media(">=37.5rem") {
+				padding-top: 4.6rem;
+			}
 		}
 	}
 }

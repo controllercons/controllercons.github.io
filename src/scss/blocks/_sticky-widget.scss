@@ -20,13 +20,17 @@
 	bottom: 0;
 	@include box-shadow();
 	display: flex;
-	gap: 2rem;
+	gap: 1rem;
 	left: $spacing-lg;
 	justify-content: center;
 	padding-top: 1.15rem;
 	padding-bottom: 0.95rem;
 	position: sticky;
 	width: calc(100% - #{$spacing-lg * 2});
+
+	@include media(">=22em") {
+		gap: 2rem;
+	}
 
 	@include media(">=39.75rem") {
 		left: 50%;

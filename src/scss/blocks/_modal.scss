@@ -8,8 +8,8 @@
 	transition-property: opacity, transform;
 	transition-timing-function: cubic-bezier(0,1.15,1,1.13);
 	transition-duration: 0.7s;
-	width: 100%;
-	z-index: 3;
+	width: calc(100% - 2rem);
+	z-index: 15;
 
 	&--open {
 		opacity: 1;
@@ -79,7 +79,7 @@
 		.controllercon {
 			margin-left: auto;
 			margin-right: auto;
-			max-width: 10em;
+			max-width: 6em;
 		}
 	}
 

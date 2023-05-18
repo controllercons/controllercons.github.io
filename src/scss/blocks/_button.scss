@@ -101,7 +101,7 @@ button {
 		content: "";
 		display: inline-block;
 		height: 0.2rem;
-		left: 50%;
+		// left: 50%;
 		position: absolute;
 		transform: translateX(-50%);
 		@include transition("transform, background-color");
